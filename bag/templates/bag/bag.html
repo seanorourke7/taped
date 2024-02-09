@@ -53,6 +53,11 @@
                                     <td class="py-3">
                                         <p class="my-0">${{ item.product.price }}</p>
                                     </td>
+                                    <td class="py-3">
+                                        {% if item.custom %}
+                                        <p>This item can be customised. DM us for more info @ https://www.instagram.com/luca_tapedoffical/</p>
+                                        {% endif %}
+                                    </td>
                                 </tr>
                             {% endfor %}
                             <tr>
