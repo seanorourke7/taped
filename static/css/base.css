@@ -88,6 +88,12 @@ a.category-badge > span.badge:hover {
     color: #fff !important;
 }
 
+.btt-link,
+.update-link,
+.remove-item {
+    cursor:pointer;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
