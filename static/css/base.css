@@ -162,6 +162,25 @@ a.category-badge > span.badge:hover {
     overflow-y: auto;
 }
 
+.login, 
+.password_reset,
+.signup {
+    background: rgb(210, 210, 210, 0.8);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 10rem;
+    text-decoration: none;
+    color: #000;
+}
+.logout {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 10rem;
+    text-decoration: none;
+    color: #000;
+}
+.button_links {
+    text-decoration: none;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
