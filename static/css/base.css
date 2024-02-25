@@ -175,6 +175,14 @@ input[name='q']::placeholder {
   }
 }
 
+/*change free delivery banner on smaller screens*/
+
+@media (min-width: 480px) {
+    .free_delivery {
+        font-size: small;
+    }
+}
+
 /* Allauth form formatting */
 
 .allauth-form-inner-content p {
