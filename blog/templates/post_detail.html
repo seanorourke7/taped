@@ -7,7 +7,7 @@
         <!-- Post author first | Then the post's created date -->
         <p class="post-subtitle">{{ post.created_on }}</p>
       </div>
-      <div class="d-none d-md-block col-md-6 masthead-image">
+      <div class="d-md-block col-md-6 masthead-image">
         <!-- A featured image will be used if an image isnt uploaded -->
         {% if "placeholder" in post.featured_image.url %}
         <img

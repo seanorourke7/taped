@@ -22,7 +22,7 @@
                 {% endif %}
               </div>
               <a href="{% url 'post_detail' post.slug %}" class="post-link">
-                <p class="card-text"> {{ post.content }} </p>
+                <p> {{ post.content | safe }}</p>
               </a>
               <hr>
               <p class="card-text text-muted h6">
