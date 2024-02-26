@@ -166,7 +166,7 @@ input[name='q']::placeholder {
     overflow-y: auto;
 }
 
-.container {
+#postdetail {
     margin-top: 180px;
 }
 
