@@ -300,3 +300,8 @@ input[name='q']::placeholder {
 #blog {
     padding-top: 150px;
 }
+
+.post_edit { 
+    border: 2px solid white;
+}
+

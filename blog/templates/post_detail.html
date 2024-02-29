@@ -28,7 +28,7 @@
 
 <div class="container">
   <div class="row">
-    <div class="col card col-md-12 mt-3 left top">
+    <div class="col card col-md-10 mt-3 left top">
       <div class="card-body">
         <!-- The post content gets displayed here -->
         <p> {{ post.content | safe }}</p>
@@ -72,11 +72,6 @@
             <strong class="text-secondary"
               ><i class="far fa-heart"></i> {{post.number_of_likes}}
             </strong>
-          </div>
-
-        <!-- Code to handle comments -->
-
-          <div class="col-1">
             {% with comments.count as total_comments %}
             <strong class="text-secondary"
               ><i class="far fa-comments"></i>
@@ -91,14 +86,18 @@
 <!-- Code will only allow edit and delte option if the user is the post author -->
 
   <div>
-    {% if user == post.author %}
-
-    <a class="nav-link active" href="{% url 'delete_post' post.slug %}"
-      >Delete This Post
-    </a>
-    <a class="nav-link active" href="{% url 'edit_post' post.slug %}"
-      >Edit This Post
-    </a>
+    {% if user.is_superuser %}
+    <span>
+      <a href="{% url 'delete_post' post.slug %}">
+        <button class="btn btn-black rounded-0 text-uppercase float-left post_edit">Delete Post</button>
+      </a>
+    </span>
+    <div></div>
+    <span>
+      <a href="{% url 'edit_post' post.slug %}"><button class="btn btn-black rounded-0 text-uppercase float-left post_edit">Edit
+          Post</button>
+      </a>
+    </span>
     {% endif %}
   </div>
 
@@ -108,7 +107,7 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-md-8 card mb-4 mt-3">
+    <div class="col-md-6 card mb-3 mt-3">
       <h3>Comments:</h3>
       <div class="card-body">
         <!-- A for loop inside the empty control tags to iterate through each comment in comments -->
