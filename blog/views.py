@@ -4,6 +4,7 @@ from django.http import HttpResponseRedirect
 from .models import Post
 from .forms import CommentForm, PostForm
 from . import forms
+from django.contrib import messages
 from django.views.generic import UpdateView
 from django.urls import reverse_lazy
 
@@ -55,6 +56,7 @@ class PostDetail(View):
             comment = comment_form.save(commit=False)
             comment.post = post
             comment.save()
+            messages.info(request, f'New comment has been submitted for approval')
         else:
             comment_form = CommentForm()
 
@@ -98,8 +100,13 @@ class PostCreate(View):
             instance = form.save(commit=False)
             instance.author = request.user
             instance.save()
+        if instance.status == 1:
+            messages.info(request, f'Created and published new post')
+        else:
+            messages.info(request, f'New post created as draft only. ')
             return HttpResponseRedirect(reverse('home'))
         return render(request, 'postcreate.html', {'form': form})
+
 
 # view for deleting posts by the user
 
