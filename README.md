@@ -1,1 +1,898 @@
-# taped
+# LucaTaped
+
+![lucataped responsive screenshot]()
+
+## Introduction
+
+
+
+View live site: [LucaTaped]()
+
+If you wish to make a test purchase, you can use the following [Stripe Dummy Card](https://stripe.com/docs/testing) details:
+
+- Success Card Number: 4242424242424242
+- 3D Secure Auth Number: 4000 0027 6000 3184
+- Exp Date: Any date in the future using the format MM/YY
+- CVN: any 3 digit number
+- Postcode: any 5 numerals  
+
+Any payments made using a valid debit/credit card will not be processed and the card will not be charged. No orders made will be fulfilled.
+
+For full Admin access to Django Admin panel with relevant sign-in credentials: [LucaTaped Admin](/admin/)
+
+For access to Admin Dashboard frontend view with relevant sign-in credentials: [LucaTaped Admin Dashboard](/products/admin_dashboard/)
+
+## Table of Contents
+
+- [LucaTaped](#lucataped)
+  - [Introduction](#introduction)
+  - [Table of Contents](#table-of-contents)
+  - [Overview](#overview)
+  - [Customer Goals](#customer-goals)
+  - [Business Goals](#business-goals)
+- [UX/UI - User Experience/User Interface](#uxui---user-experienceuser-interface)
+  - [Design Inspiration](#design-inspiration)
+    - [Color Scheme](#color-scheme)
+    - [Typography \& Iconography](#typography--iconography)
+- [Project Planning](#project-planning)
+  - [Strategy Plane](#strategy-plane)
+    - [Carbon Footprint Planning](#carbon-footprint-planning)
+    - [Site Goals](#site-goals)
+  - [Agile Methodologies](#agile-methodologies)
+    - [MoSCoW Prioritization](#moscow-prioritization)
+    - [Sprints](#sprints)
+  - [Marketing](#marketing)
+  - [User Stories](#user-stories)
+    - [Visitor User Stories](#visitor-user-stories)
+    - [Epic - Home View \& User Account](#epic---home-view--user-account)
+    - [Epic - Products](#epic---products)
+    - [Epic - Basket Management \& Purchasing](#epic---basket-management--purchasing)
+    - [Epic - Wishlist](#epic---wishlist)
+    - [Epic - Newsletter](#epic---newsletter)
+  - [Scope Plane](#scope-plane)
+  - [Structural Plane](#structural-plane)
+  - [Skeleton \& Surface Planes](#skeleton--surface-planes)
+    - [Wireframes](#wireframes)
+    - [Database Schema](#database-schema)
+    - [Defensive Design](#defensive-design)
+- [Features](#features)
+  - [User View - Guests/Account Holders](#user-view---guestsaccount-holders)
+  - [CRUD Functionality](#crud-functionality)
+  - [Features Showcase](#features-showcase)
+  - [Future Features](#future-features)
+- [Technologies \& Languages Used](#technologies--languages-used)
+  - [Libraries \& Frameworks](#libraries--frameworks)
+  - [Tools \& Programs](#tools--programs)
+- [Testing](#testing)
+- [Deployment](#deployment)
+  - [Connecting to GitHub](#connecting-to-github)
+  - [Django Project SetUp](#django-project-setup)
+    - [Elephant SQL](#elephant-sql)
+  - [Heroku Deployment](#heroku-deployment)
+  - [Google Mail Setup](#google-mail-setup)
+  - [AWS Config](#aws-config)
+    - [Media Folder Setup](#media-folder-setup)
+    - [Django AWS Connect](#django-aws-connect)
+  - [Stripe Config](#stripe-config)
+  - [Clone Project](#clone-project)
+  - [Fork Project](#fork-project)
+- [Credits](#credits)
+  - [Code](#code)
+  - [Media](#media)
+    - [Additional reading/tutorials/books/blogs](#additional-readingtutorialsbooksblogs)
+  - [Acknowledgements](#acknowledgements)
+
+## Overview
+LucaTaped is a products store and blog hosting platform. Users are invited to:
+
+- View the store as Guests
+- Register for an Account
+- Browse products by category and price
+- View, add and edit products in their bag
+- View blog posts
+- As registered users, view past orders and comment on blog posts
+- Sign up for a weekly newsletters
+
+LucaTaped is accessible via all browsers with full responsiveness on different screen sizes. Its aim is to showcase the skillset of scooter stunts and offer relevant products for sale. 
+
+## Customer Goals
+
+Customers are provided with an easy, intuitive shopping experience and are encouraged to avail of relevant scooter accessories and merchandise. It is hoped that customers will sign up/register an account to be able to avail of the full range of user features. A sense of community is created with a weekly newsletter which will inform the customers of new products, trends and articles on lucataped.
+
+## Business Goals
+
+LucaTaped provides easy Admin functionality for the business owner with an accessible, easy-use Admin Dashboard to manage inventory and articles. The additional frontend forms allows the business owner to make quick and easy changes, Add/Edit/Delete Products and publish new articles to the blog. 
+
+LucaTaped seeks to build a strong base of regular shoppers who seek quality products relevant to their interests. The newsletter and articles are disgned to showcse the constant inprovement Luca in making in his skills and to showcase new products available for sale. Further marketing is made through the businesses social media channels, in particular their Facebook and Instagram page.
+
+# UX/UI - User Experience/User Interface
+
+## Design Inspiration
+
+From the beginning of the project, I knew that the colour palette would reflect nature with shades of green acting as the primary colour, in particular forest green, #194f49. The website is kept clean, with good flow, using plenty of white space to draw attention to the products and the website's mission in reducing the carbon footprints of its users.
+
+A simple logo, created using [LogoAI](https://www.logoai.com) is used as a header and an email branding logo. It's simple and effective design is eye catching and easily recogniseable. 
+
+![lucatpaed logo]()  
+
+Product images are kept clean with no backgrounds so that focus is on the product itself. Feedback is continuously provided to the user via the website's header which displays whether the user is logged in and how much their shopping total is currently. Message 'toasts' are also visible upon user actions to display further information. Buttons are kept similar for continuity.
+
+![Header Feedback]()  
+*Header feedback is kept clean and intuitive*
+
+### Color Scheme
+
+![LucaTaped Color Scheme]()
+*lucataped Color Scheme*
+
+
+![LucaTaped Color Scheme accessibility Check]()  
+*LucaTaped Color Accessibility Check*
+
+![LucaTaped Color Scheme Contrast Check]()  
+*LucaTaped Color Contrast Check - Main*
+
+![LucaTaped Color Scheme Contrast Check]()  
+*LucaTaped Color Contrast Check - Button*
+
+### Typography & Iconography
+
+![LucaTaped Font Pairing]()
+*LucaTaped Font Pairing*
+
+
+# Project Planning
+
+## Strategy Plane
+
+The primary objective was to create an e-commerce store that satisfied the assessment criteria of the Code Institute's Project 5: E-Commerce Module. The store must provide the expected functions of a responsive e-commerce store using Stripe as a payment system, user/guest views for authentication and store features, some extra features of my choosing, such as articles, and demonstration of some marketing/SEO skills. The User, whether paying customer or just browsing, must receive the best in UX and feel that LucaTaped is relatable and trust-worthy. 
+
+The site's design and graphic assets were collected through various copyright-free image websites. Images were edited for the website to be cohesive. Bootstrap and Crispy Forms were used for the project's frontend to speed up the process and to keep the templates consistent. Further customisation to the buttons, forms, modals, toasts and user feedback processes were added to the project's CSS files. 
+
+If a customer chooses to make a purchase then they are given consistent feedback through the use of 'toasts' messages and confirmation emails. The purchasing process is presented using Stripe payment handlers, obtained and setup using [Stripe's](https://stripe.com/docs) documentation and website.
+
+### Site Goals
+
+- Site provides enjoyable experience for shoppers.
+- Customers are educated about Luca's progress and Scooter stunt skills and are also encouraged to engage across different platforms.
+- Customers feel informed that they are making a good choice shopping with LucaTaped.
+- UX remains similar across screen sizes.
+- CRUD functionalities work as intended with easy to use frontend forms.
+- Scalable site to allow for extra features in the future.
+
+## Agile Methodologies
+
+LucaTaped followed Agile planning methodologies to its completion. [GitHub Projects]() provided an ideal platform to create issues, boards and milestones for each of the project's Epics. Using labels I could easily identify my next task and organise them into the appropriate Milestones and Sprints. Keeping focused on individual sections as I built LucaTaped reduced the number of bugs and human errors.
+
+### MoSCoW Prioritization
+
+I chose to follow the MoSCoW Prioritization method for Everneed, identifying and labeling my:
+
+- **Must Haves**: the 'required', critical components of the project. Completing my 'Must Haves' helped me to reach the MVP (Minimum Viable Product) for this project.
+- **Should Haves**: the components that are valuable to the project but not absolutely 'vital' at the MVP stage. The 'Must Haves' must receive priority over the 'Should Haves'.
+- **Could Haves**: these are the features that are a 'bonus' to the project, it would be nice to have them in this phase, but only if the most important issues have been completed first and time allows.
+- **Won't Haves**: the features or components that either no longer fit the project's brief or are of very low priority for this release.
+
+### Sprints
+
+My Sprints were broken down into appropriately sized chunks from the beginning and I followed them to the best of my abilities.
+
+| Sprint No. | Sprint Content | Start/Finish Dates |
+|------------|----------------|--------------------|
+|    # 1     | Project Setup  |
+|    # 2     | AllAuth & Basic Navigation |
+|    # 3     | Product Views & CRUD  |
+|    # 4     | Shopping Bag Functionality & Styling |
+|    # 5     | Blog  |  20/01/2024 - 08/01/2024    |
+|    # 6     | Carbon Footprint & Articles  |
+|    # 7     | Admin Dashboard  |
+|    # 8     | User/Customer Correspondence |
+|    # 9     | Documentation & Testing   |
+
+## Marketing
+
+An [LucaTaped Facebook Page](https://www.facebook.com/) was created to demonstrate promotion of the LucaTaped store on social media. Posts informing customers of deals and new products would be made on the page with the hopes of drawing in more revenue. Facebook provides an easy, minimal-step process to allow business owners to promote their business, with additional paid 'boost' features to further promote and spread the reach of the posts. LucaTaped also offers a newsletter subscription service through MailChimp. The benefit of both of these services is that the customer is not forced to sign up to either and potentially worry that they will be spammed with an unnecessary amount of information. 
+
+Within the head's meta tags of the base template are researched keywords and a description of LucaTaped's goal as a business. These keywords have been researched using[Wordtracker](https://www.wordtracker.com/) to ensure that both short-tail and long-tail keywords are included. Keywords such as 'scooter', 'stunts' and 'skatepark' aim to reach most of the market, with additional descriptive key phrases such as 'buy scooter accessories' and 'buy grip tape' to draw in users who know exactly what type of product they are looking for. Important keywords like 'Grip Tape' and 'Scooter' are present in the product names and descriptions in the hope to catch a chance to appear at the top of the customers' Google searches.
+
+In addition to this, sitemap.xml and robots.txt files are included to increase the site's visibility. These files are essential for SEO (Search Engine Optimisation). The sitemap.xml was generated using [XML Sitemap](https://www.xml-sitemaps.com/) and included in the root folder of the project. A robots.txt file was created in the root folder to instruct search engine crawlers on how to access and crawl the site's pages.
+
+![LucaTaped Facebook Business Page](.png)
+*LucaTaped Facebook Business Page*
+
+## User Stories
+
+User stories and features were recorded and managed on [GitHub Projects]()
+
+### Visitor User Stories
+
+| User Story | Priority |
+|------------|------------------|
+| As a **customer**, I can **view the site's home page** so that I can **understand the site's intentions and purpose**. | **MUST HAVE** |
+| As a **customer**, I can **see and use the navigation bar** so that I can **make my way around the site and get to where I would like**. | **MUST HAVE** |
+| As a **customer**, I can **enter text into the search bar** so that I can **search for a specific item**. | **MUST HAVE** |
+
+### Epic - Home View & User Account
+
+| User Story | Priority |
+|------------------|---------------------|
+| As a **customer** I can **create and manage an account with LucaTaped** so that I can **keep my personal details, order history and speed up my checkout process**. | **MUST HAVE** |
+| As a **customer**, I can **edit my personal details on my account** so that I can **keep them up to date**. | **MUST HAVE** |
+| As a **site user**, I can **enter my login details** so that I can **login in to my account**. | **MUST HAVE** |
+| As a **site user**, I can **click on the visible links in the footer** so that I can **view the relevant information and destinations**. | **MUST HAVE** |
+| As a **site user**, I can **register my email and receive a validation link via email** so that I can **create an account with everneed to track my spending and purchases**. | **SHOULD HAVE** |
+| As a **customer**, I can **use the Contact Us form** so I can **send a message to the business/site admin**. | **SHOULD HAVE** |
+
+### Epic - Products
+
+| User Story | Priority |
+|------------------|---------------------|
+| As a **site user** I can **interact with sorting and view features on the 'All Products' page** so that I can **improve my shopping experience on the site**. | **MUST HAVE** |
+| As a **site user**, I can **click on a navbar item for a specific category** so that I can **choose to view a smaller amount of related products**. | **MUST HAVE** |
+| As a **customer**, I can **choose an individual product** so that I can **view its description, price, colours, sizes available etc**. | **MUST HAVE** |
+| As a **site admin** I can **add a product to my inventory using a frontend from** so that I can **increase my range/amount of products available on site**. | **MUST HAVE** |
+| As a**site admin**, I can **edit existing inventory from a frontend form** so I can **change the quantity of stock, sizes, colours or edit products description, price or image**. | **MUST HAVE** |
+| As a **site admin**, I can **delete product from the inventory using a frontend form** so that I can **remove it from sale**. | **MUST HAVE** |
+
+### Epic - Basket Management & Purchasing
+
+| User Story | Priority |
+|------------------|---------------------|
+| As a **customer** I can **create and manage an account with LucaTaped** so that I can **keep my personal details, order history and speed up my checkout process**. | **MUST HAVE** |
+| As a **customer**, I can **click on 'Add to Bag' in my product view**so that I can **add the product to my bag**. | **MUST HAVE** |
+| As a **customer**, I can **increase/decrease/remove quantities of a product in my bag** so that I can **have control over what I wish to purchase**. | **MUST HAVE** |
+| As a **customer**, I can **view my bag total from any page** so that I can **keep track of my potential spending**. | **MUST HAVE** |
+| As a **customer**, I can **checkout my products securely** so that I can **complete my purchase**. | **MUST HAVE** |
+| As a **customer**, I can **receive an email after purchasing** so that I can **confirm my purchase and keep a record of my order**. | **MUST HAVE** |
+| As a **site user** I can **view error pages with 'Home' links** so that I can **return to the main page if a page is missing or forbidden**. | **MUST HAVE** |
+
+### Epic - Wishlist
+
+| User Story | Priority |
+|------------------|---------------------|
+| As a **logged-in user** I can **comment on the blog posts** so that I can **feel connected to the site and participate in the discourse**. | **COULD HAVE** |
+
+### Epic - Newsletter
+
+| User Story | Priority |
+|------------------|---------------------|
+| As a **customer**, I can **enter my details into the newsletter form** so I can **receive emails about products or new blog entries**. | **SHOULD HAVE** |
+
+## Scope Plane
+
+A working e-commerce store was essential so I initially planned to keep to the MVP to ensure that I would complete the project successfully. Especially with the project being my final one for this Diploma. 
+
+Adding an Articles feature posted solely by the Admin of the website felt important to give more information to the customers and to showcase my ability as a developer. 
+
+Django's MVT framework allowed these features to be built quickly and the addition of an Admin frontend panel for managing products and articles created a robust e-commerce site that could start taking orders tomorrow.
+
+Essential features were:
+- User Accounts with AllAuth
+- Payment system with Stripe
+- Articles creation and management - Full CRUD
+- Product inventory management - Full CRUD
+- Shopping UX with Bag and Checkout processes - Full CRUD
+- Site responsivity
+- Business details to inform the user
+    
+## Structural Plane
+
+LucaTaped is built using Bootstrap, with Code Institute's Boutique Ado e-commerce project as its foundation. The typography was chosen to give a clean, strong reading experience for the user. 
+
+Form validation has been left with it's original styling as no change was needed. Bootstrap allowed for easy transition between screen sizes as many ecommerce purchases are made using our mobiles, so this was a priority focus. 
+
+## Skeleton & Surface Planes
+
+### Wireframes
+
+[Figma](https://www.figma.com) was used to create basic wireframes for LucaTaped. I had a vision of what the site would look like from the beginning so the planning process went smoothly. Figma allows easy creation of wireframes to the appropriate frame sizes for different screens. Addition of icons and extra design features is easy with their Plugins component which can connect to Flaticon for example.
+
+<details open>
+    <summary>Desktop/Tablet Home Page Wireframe</summary>  
+    <img src=".png">  
+</details>
+
+<details>
+    <summary>Mobile Home Page Wireframe</summary>  
+    <img src=".png">  
+</details>
+
+<details>
+    <summary>Mobile Home Page Wireframe</summary>  
+    <img src=".png">  
+</details>
+
+<details open>
+    <summary>Desktop/Tablet/Mobile All Products Page Wireframe</summary>  
+    <img src=".png">  
+</details>
+
+<details open>
+    <summary>Desktop/Tablet Product Page Wireframe</summary>  
+    <img src=".png">  
+</details>
+
+<details>
+    <summary>Shopping Bag Wireframe</summary>  
+    <img src=".png">  
+</details>
+
+<details>
+    <summary>Bag Contents Toast Wireframe</summary>  
+    <img src=".png">  
+</details>
+
+<details open>
+    <summary>Mobile Menu & Auth Pages Wireframe</summary>  
+    <img src=".png">  
+</details>
+
+<details>
+    <summary>Desktop Register Page Wireframe</summary>  
+    <img src=".png">  
+</details>
+
+<details>
+    <summary>Desktop SignIn Page Wireframe</summary>  
+    <img src=".png">  
+</details>
+
+<details>
+    <summary>Desktop SignOut Wireframe</summary>  
+    <img src=".png">  
+</details>
+
+### Database Schema
+
+![LucaTaped Ecommerce ERC](.png)  
+*Database Schema (ERD) for LucaTaped displaying relationships between feature components saved within the database*
+
+[Lucidchart](https://www.lucidchart.com/pages/) was used to create the ERD(Entity Relationship Diagram) for LucaTaped. To satisfy the assessment criteria, multiple models were created to personalise the LucaTaped project. These include:
+- **Articles**: Articles may be added by Admin with image and text fields within the Add/Edit Article forms.
+- **Product**: The Boutique Ado Product model was used to add, edit and delete products from the shopping bag. 
+
+
+Future Feature models are visible in the ERD for Reactions, Reviews and Discount Codes. These will be incorporated into the next version of LucaTaped. At the moment they are beyond the MVP.
+
+### Defensive Design
+
+LucaTaped was developed to ensure a reliable user experience. It's intention was to cause no frustrations for the users and to ensure they return to make further purchases.
+
+- Django AllAuth for user registration/log in/log out
+- Input validation and error messages provide feedback to the user to guide them towards the desired outcome. 
+- Unregistered users are diverted to the Sign Up page from restricted access pages. 
+- Authentication processes control edit/delete icons to reveal them to the Admin only, this is further secured through accessing of CRUD functionalities in the Admin Dashboard. 
+- Error pages are displayed with 'Home' buttons to help users get back on track. 
+- Testing and validation of features completes the process.
+
+**CSRF Tokens**
+
+CSRF (Cross-Site Request Forgery) tokens are included in every form to help authenticate the request with the server when the form is submitted. Absence of these tokens can leave a site vulnerable to attackers who may steal a user's data.
+
+# Features
+
+## User View - Guests/Account Holders
+
+| Feature   | Guest | Registered, Account Holder |
+|-----------|-------------------|-----------------|
+| Home Page | Visible           | Visible         |
+| Account  | Not Visible - 'Account' option only appears for registered, logged-in users | Visible and full feature interaction available |
+| All Products  | Visable - items can be viewed and added to Bag, | Visible and full feature interaction available |
+| Categories   | Visible - items can be viewed and added to Bag,  | Visible and full feature interaction available |
+| Blog   | Visible | Visible |
+| Comment   | Not Visible | Only visible to registered users |
+| Search  | Visible | Visible |
+| Contact Us/Newsletter | Visible | Visible |
+| Product Management | Not Visible | Only visible to Admin |
+| Create a Post | Not Visible | Only visible to Admin |
+
+## CRUD Functionality
+
+Customers have full CRUD functionality with their prospective purchases. They may edit their bag, add more items or remove all items. They may also edit their delivery details if they are registered, logged-in users. LucaTaped Admin have access to the Admin Dashboard which allow them full CRUD over Product Management and Article posting.
+
+| Feature | Create | Read | Update | Delete |
+|---------|--------|------|--------|--------|
+| Account | On registration | Yes, delivery details and order history | Yes, update address | No, users are unable to delete their accounts, this is restricted to Admin |
+| Bag | Yes, customers may add to their bag | Yes | Yes, items can be added/removed | Yes |
+| Products | Yes, Admin only | Yes, all users | Yes, Admin only | Yes, Admin only |
+| Articles | Yes, Admin only | Yes, all users | Yes, Admin only | Yes, Admin only |
+
+## Features Showcase
+
+**Header & Navigation - All Users**
+
+*For features showcase, screenshots of the features in use were taken on Laptop/*
+
+LucaTaped's navbar is kept clean, with a simple dropdown menu for the 'All Products' section. 
+- The search icon yields a search modal when clicked.
+- The bag displays the number of items within it if the customer adds an item to it.
+
+The navbar is displayed via a dropdown toggle in mobile view.
+
+<details open>
+    <summary>Header & Navigation - All Users</summary>  
+    <img src=".png">  
+</details>
+
+<details open>
+    <summary>Header & Navigation Menu Demo</summary>  
+    <img src=".gif">  
+</details>
+
+<details open>
+    <summary>Header & Navigation Mobile View</summary>  
+    <img src=".gif">  
+</details>
+
+**Home Page - All Users**
+
+The LucaTaped Home Page invites the user in with a 
+
+
+
+<details open>
+    <summary>Home Page - All Users</summary>  
+    <img src=".png">  
+</details>
+
+<details open>
+    <summary>Home Page: Bestsellers Carousel Demo</summary>  
+    <img src=".gif">  
+</details>
+
+<details>
+    <summary>Home Page: Mission Section - All Users</summary>  
+    <img src=".png">  
+</details>
+
+<details>
+    <summary>Home Page: FAQ Section - All Users</summary>  
+    <img src=".png">  
+</details>
+
+**Search - All Users**
+
+The search icon when clicked presents the user with a search modal that will take the user's input and return the relevant products. If that product is not available then the search result informs the user that there are '0' products with that name.
+
+<details open>
+    <summary>Search - All Users</summary>  
+    <img src=".png">  
+</details>
+
+**All Auth - All Users who wish to create an account**
+
+Django AllAuth provides a comprehensive, customisable authentication system that keeps user data safe. If a customer wishes to register an account they may enter their username and email and password x 2 to ensure precision. Upon submitting the form the user will receive an email to validate their email and then sign in to LucaTaped. Similar to all form fields throughout the site, I have applied my own styling to keep in line with LucaTaped's design. The log in page is similar to the register page with the log out page presenting the user with two buttons to continue the log out process or to return home.
+
+Feedback is continually released to the user through toast messages to confirm successful registration, log in and log out.
+
+AllAuth handles password reset by sending an email to the user with a link to change their password to something new.
+
+<details open>
+    <summary>Register - All Users</summary>  
+    <img src=".png">  
+</details>
+
+<details open>
+    <summary>Confirm Email - All Users</summary>  
+    <img src=".png">  
+</details>
+
+<details>
+    <summary>Log In - All Users</summary>  
+    <img src=".png">  
+</details>
+
+<details>
+    <summary>Log In Toast - Registered, Verified Users</summary>  
+    <img src=".png">  
+</details>
+
+<details>
+    <summary>Log Out - All Users</summary>  
+    <img src=".png">  
+</details>
+
+<details>
+    <summary>Password Reset - All Users</summary>  
+    <img src=".png">  
+</details>
+
+<details>
+    <summary>Password Success - All Users</summary>  
+    <img src=".png">  
+</details>
+
+**Account - Registered, logged in User**
+
+The Account page for LucaTaped is kept simple, with only relevant information and functionality. The registered, logged in user may adjust their personal, delivery address to be autofilled into their checkout form when making a purchase. Previous purchases are displayed in the Order History, displayed by most recent date.
+
+<details open>
+    <summary>Account Toast - Registered, logged-in Users</summary>  
+    <img src=".png">  
+</details>
+
+<details open>
+    <summary>Account View - Registered, logged-in Users</summary>  
+    <img src=".png">  
+</details>
+
+**All Products - All Users**
+
+LucaTaped sells a curated list of products, selected because of their 
+
+
+
+Products may be sorted according to price, A-Z, rating and category using the dropdown sort field.
+
+Admin may access the Admin Dashboard to add/edit/delete any items within the database. Crispy Forms renders the adding/editing forms. Products have the ability to display a 'Rating', at the moment it is at the discretion of the Admin to add these values based on sales. With the next version of LucaTaped, the Reviews feature will dictate the average rating for each product.
+
+No information is lost when viewing the website on mobile view. All screen sizes display the same information to give all users the same experience.
+
+<details open>
+    <summary>All Products Desktop - All Users</summary>  
+    <img src=".png">  
+</details>
+
+<details>
+    <summary>All Products Mobile - All Users</summary>  
+    <img src=".png">  
+</details>
+
+<details open>
+    <summary>Product Detail Desktop - All Users</summary>  
+    <img src=".png">  
+</details>
+
+<details>
+    <summary>Product Detail Mobile - All Users</summary>  
+    <img src=".png">  
+</details>
+
+<details>
+    <summary>Admin Product List - Logged-In, Admin only</summary>  
+    <img src=".png">  
+</details>
+
+<details>
+    <summary>Admin Add Product Form - Logged-In, Admin only</summary>  
+    <img src=".png">  
+</details>
+
+<details>
+    <summary>Admin Edit Product Form - Logged-In, Admin only</summary>  
+    <img src=".png">  
+</details>
+
+<details>
+    <summary>Admin Confirm Delete - Logged-In, Admin only</summary>  
+    <img src=".png">  
+</details>
+
+**Categories - All Users**
+
+LucaTaped keeps it's shopping experience clean and easily accessible with three categories:
+- Accessories 
+- Grip Tape
+- Merchandise
+
+'All' displays all of the products available.
+
+<details>
+    <summary>Everneed Categories - All Users</summary>  
+    <img src=".png">  
+</details>
+
+**Articles - All Users/Admin CRUD**
+
+The blog posts currently displayed on LucaTaped are informing customers of the  ..........           . The Admin has sole responsibility to add/edit/delete articles with an option for the customer/reader to comment on the post if they are logged in.
+
+The Admin may add/edit/delete articles via the Admin Dashboard. If no image is included in the form or if the image url breaks, a placeholder image is present so as not to display a broken image link. When adding an article, the Admin may choose to save the article to drafts or publish them immediately. Drafts are accessible via the django backend panel and are published by selecting the published checkbox.
+
+<details open>
+    <summary>Blog List - All Users</summary>  
+    <img src=".png">  
+</details>
+
+<details open>
+    <summary>Individual Blog View Desktop - All Users</summary>  
+    <img src=".png">  
+</details>
+
+<details>
+    <summary>Individual Blog View Mobile - All Users</summary>  
+    <img src=".png">  
+</details>
+
+<details open>
+    <summary>Blog List Edit/Delete View - Admin only, accessed via Admin Dashboard</summary>  
+    <img src=".png">  
+</details>
+
+<details>
+    <summary>Add Blog Form Mobile View - Admin only, accessed via Admin Dashboard</summary>  
+    <img src=".png">  
+</details>
+
+<details>
+    <summary>Blog Edit Form Mobile View - Admin only, accessed via Admin Dashboard</summary>  
+    <img src="docs/readme_images/art_edit_form.png">  
+</details>
+
+**Bag - All Users**
+
+LucaTaped's Shopping Bag feature is presented in a clean and clear format to correctly and quickly inform the user of their possible purchase choices. The customer has the option to change the amounts of the items that they wish to buy or to remove them completely from the bag. The customer is shown their running totals as well as their delivery charge. When products are added/updated/removed to/from the bag, then a toast message displays to give the customer feedback on their most recent choice.
+
+A clear message is shown if there are no items in the bag and a 'Keep Shopping' button redirects the user back to the 'All Products' page. A delivery threshold banner informs the customer how much more they need to spend to reach the free delivery threshold.
+
+<details open>
+    <summary>Bag Contents Desktop/Tablet - All Users</summary>  
+    <img src=".png">  
+</details>
+
+<details>
+    <summary>Bag Contents Mobile - All Users</summary>  
+    <img src=".png">  
+</details>
+
+<details>
+    <summary>Bag Toast Message displaying Bag Contents</summary>  
+    <img src=".png">  
+</details>
+
+<details open>
+    <summary>Bag Toast Delivery Threshold message - All Users</summary>  
+    <img src=".png">  
+</details>
+
+<details>
+    <summary>Bag Empty - All Users</summary>  
+    <img src=".png">  
+</details>
+
+**Checkout - All Users**
+
+The checkout process for LucaTaped is operated through the [Stripe](https://stripe.com/docs) API. As stated above -> If you wish to make a test purchase, you can use the following [Stripe Dummy Card](https://stripe.com/docs/testing) details:
+
+- Success Card Number: 4242424242424242
+- 3D Secure Auth Number: 4000 0027 6000 3184
+- Exp Date: Any date in the future using the format MM/YY
+- CVN: any 3 digit number
+- Postcode: any 5 numerals  
+
+Any payments made using a valid debit/credit card will not process and the card will not be charged. No orders made will be fulfilled.
+
+When the customer has added items that they wish to purchase to their bag, they are given the option to proceed to 'Secure Checkout' to complete their order. This checkout form contains a personal, delivery/billing information form that will display previously entered details if the user is logged in and had previously ticked the box to save their details. The Stripe Payment form accepts the user's information and will inform them if they attempt to use an invalid card. Validation is also present in the delivery form area, to remind the user if they have not entered all of the relevant details.
+
+The items the customer has chosen are visible on the right hand side of the webpage with their grand total. If the customer has not satisfied the free delivery threshold of €50, then a delivery charge of 10% of the grand total will be added to cover the cost of delivery.
+
+Once the Checkout form has been submitted, a loading spinner informs the user that their payment is processing. Stripe's webhook handlers make this process smooth as the payment may attempt 5 times before being unsuccessful overall. In the Developer's view in the Stripe Dashboard, developers can check the webhook and payment processes to confirm they are working correctly.
+
+<details open>
+    <summary>Stripe Webhook/Payment Successful - Admin</summary>  
+    <img src=".png">  
+</details>
+
+<details open>
+    <summary>Checkout Desktop - All Users</summary>  
+    <img src=".png">  
+</details>
+
+<details open>
+    <summary>Checkout Mobile - All Users</summary>  
+    <img src=".png">  
+</details>
+
+<details>
+    <summary>Checkout Stripe Form - All Users</summary>  
+    <img src=".png">  
+</details>
+
+A confirmation email for the order is emailed to all customers. This details their spending amount and the date of their purchase. Their totals and items purchased are also visible in the checkout success page upon successful payment processing. If the user is logged in, they can view this order and all previous orders, if they were logged in at the time of purchase, in their account view.
+
+<details>
+    <summary>Confirmation Email for Purchases</summary>  
+    <img src=".png">  
+</details>
+
+<details>
+    <summary>Checkout Success - All Users who've made a purchase</summary>  
+    <img src=".png">  
+</details>
+
+<details>
+    <summary>Order History - All Users who've made a purchase with a registered, logged-in account</summary>  
+    <img src=".png">  
+</details>
+
+**Admin Dashboard - Logged in Admin/Superuser only**
+
+When developing this project it was important to me to have a separate Admin area accessible via the frontend, in addition to the Django Backend Panel. I fulfilled this by separating out the CRUD features for the Admin/Superuser into an Admin Dashboard. This provides a direct link to editable forms for adding/editing products and articles. A separated 'Admin' view (viewable only to the Admin when they are logged in) has been created for Articles and Products with lists that display 'Edit' and 'Delete' Buttons. The 'Add' buttons bring the Admin directly to adding products or articles. Crispy Forms and Summernote render forms that allow for a high degree of editing, manipulation and connection to the database models.
+
+<details open>
+    <summary>Admin Dashboard View - Admin Only</summary>  
+    <img src=".png">  
+</details>
+
+<details open>
+    <summary>Admin Django Backend Panel - Admin Only</summary>  
+    <img src=".png">  
+</details>
+
+**Footer - All Users**
+
+LucaTaped's footer is .................
+
+The stores Privacy Policy and Terms and Conditions follow underneath. The Privacy Policy opens in a new tab whilst the Terms and Conditions are displayed on a new LucaTaped webpage thanks to [Termly's](https://termly.io/) pasteable HTML block, once you have given the relevant business details. Finishing off that column are the business's Social Media connections. A Facebook page for LucaTaped opens in a new tab, as does the Instagram page. My GitHub is also connected and will open in a new tab.
+
+<details open>
+    <summary>Footer - All Users</summary>  
+    <img src=".png">  
+</details>
+
+<details >
+    <summary>Privacy Policy - All Users</summary>  
+    <img src=.png">  
+</details>
+
+<details >
+    <summary>Terms & Conditions - All Users</summary>  
+    <img src=".png">  
+</details>
+
+**Contact Us - All Users**
+
+A brief contact form is offered in the footer of Everneed for any queries the customer may have. Once they have submitted their name, email and message, a thank you page is displayed, with a 'Return Home' button. The Admin may view the messages in their connected business email service and reply directly to the customer.
+
+<details open>
+    <summary>Contact Us Form - All Users</summary>  
+    <img src=".png">  
+</details>
+
+<details open>
+    <summary>Contact Form Thank You</summary>  
+    <img src=".png">  
+</details>
+
+<details open>
+    <summary>Contact Form Email</summary>  
+    <img src=".png">  
+</details>
+
+**Newsletter - All Users who subscribe**
+
+LucaTaped customers are invited to subscribe to LucaTaped's weekly newsletter. This form is located on every page in the footer. The newsletter service is offered through Mailchimp. The newsletter aims to keep customers informed of discounts, new products, sales and new blog entries on a weekly basis. On entering their email and clicking subscribe, the user is brought to a new page in a new tab confirming their subscription to LucaTaped. They may unsubscribe from here or from the bottom of the weekly newsletter.  
+
+<details open>
+    <summary>LucaTaped Newsletter Form</summary>  
+    <img src=".png">  
+</details>
+
+<details>
+    <summary>MailChimp Newsletter Sign Up Confirmation</summary>  
+    <img src=".png">  
+</details>
+
+<details>
+    <summary>MailChimp Newsletter Example</summary>  
+    <img src=".png">  
+</details>
+
+**404 Page - All Users**
+
+If a customer navigates to a page that does not exist eg 'LucaTaped-*******.com/test/' this page is displayed to the user. A 'Go Home' button takes the user back to the Home page.
+
+<details>
+    <summary>404 Error Page</summary>  
+    <img src=".png">  
+</details>
+
+## Future Features
+
+- **Stock Levels**: Editable stock levels are a priority future feature for LucaTaped. This will be added to the Admin Dashboard and the customer will be informed of stock levels via display labels if a product is out of stock.
+
+- **Reviews feature with Ratings**: I hope to include a Reviews feature in LucaTaped's future development. I would like the customer's to have access to real-life reviews of the products' robustness, wear and materials. I feel that for the brand it is important for transparency to be front and centre to ensure customers make the best choice in their purchases. Reviews will have their averages calculated and this will determine the products' rating out of 5 when implemented.
+
+- **Newsletter Discount Code**:Discount codes obtained through newsletter subscription will offer the customer a 10% discount on their first purchase if they subscribe to the newsletter distributed via MailChimp.
+
+- **Product Slugs**: Using Django-Slugify, the future version of LucaTaped will ensure that the product's name is displayed in the URL.
+
+# Technologies & Languages Used
+
+- HTML
+- CSS
+- JavaScript
+- Python
+- [Git](https://git-scm.com/) used for version control.
+- [Github](https://www.github.com) used for online storage of codebase and Projects tool.
+- [VisualStudio](https://visualstudio.microsoft.com/) as IDE for development.
+- [Figma](https://www.figma.com) for project design planning and wireframe creation.
+- [Adobe Color](https://color.adobe.com) for colour theme creation and accessibility checkers.
+- [Django](https://www.djangoproject.com/) was used as the Python framework for the site.
+- [Heroku](https://www.heroku.com) was used to host the 'everneed' application.
+- [WAVE](https://wave.webaim.org/) to evaluate the accessibility of the site.
+- [Procreate](https://procreate.com/) for image creation and editing.
+
+## Libraries & Frameworks
+
+Libraries and frameworks used were dictated by the 'Boutique Ado' walkthrough from our course material with the Code Institute. This project will be upgraded on completion of the course to more recent packages to meet current standards and security packages.
+
+- [Django v3.2](https://docs.djangoproject.com/en/4.2/releases/3.2/) 
+- [AllAuth v0.41](https://django-allauth.readthedocs.io/) for user authentication and account management.
+- [Bootstrap v4.6](https://getbootstrap.com/docs/4.6/getting-started/introduction/) for template rendering.
+- [Crispy Forms](https://pypi.org/project/crispy-bootstrap4/) for form rendering.
+- [boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html) for AWS CRUD with Python scripts.
+- [dj-database-url](https://pypi.org/project/dj-database-url/) for DATABASE_URL.
+- [django-countries](https://pypi.org/project/django-countries/) for country field rendering in checkout form.
+- [django-storages](https://django-storages.readthedocs.io/en/latest/) for handling static and media files.
+- [django-summernote](https://pypi.org/project/django-summernote/) a WYSIWYG editor for Django forms and models.
+- [gunicorn](https://docs.djangoproject.com/en/4.2/howto/deployment/wsgi/gunicorn/) apure-Python WSGI server for UNIX.
+- [oauthlib](https://pypi.org/project/oauthlib/) OAuth request-signing logic.
+- [psycopg2](https://pypi.org/project/psycopg2/) s PostgreSQL database adapter for Python.
+- [Stripe](https://stripe.com/en-ie) for processing LucaTaped's payment system.
+
+## Tools & Programs
+- [ImageCompressor](https://imagecompressor.com/) for compressing PNG/WEbp files
+- [Image ReSizer](https://www.simpleimageresizer.com/) for reducing image size
+- [EZGif](<https://ezgif.com/>) for gif conversion.
+- [Convertio](https://convertio.co/) for file conversion to PNG, WEBP.
+- [Tiny Png](https://tinypng.com/) for file size reduction.
+- [Lucidchart](https://www.lucidchart.com/pages) for ERD (entity relationship diagram) creation.
+- [Favicon](https://favicon.io/) for converting an icon into a favicon.
+- [amiresponsive](https://ui.dev/amiresponsive) for screenshot of LucaTaped on different screen sizes.
+- [Perplexity AI](https://www.perplexity.ai/) for breaking down Python concepts and Django documentation into more understandable chunks.
+- [Mailchimp](https://mailchimp.com/) is used for marketing with their newsletter subscription service.
+
+# Testing
+
+- For all testing, please refer to the [TESTING.md](TESTING.md) file.
+
+# Deployment
+
+## Clone Project
+
+A local clone of this repository can be made on GitHub. Please follow the below steps:
+
+1. Navigate to GitHub and log in.
+2. The [LucaTaped Repository](https://github.com...............) can be found at this location.
+3. Above the repository file section, locate the '**Code**' button.
+4. Click on this button and choose your clone method from HTTPS, SSH or GitHub CLI, copy the URL to your clipboard by clicking the '**Copy**' button.
+5. Open your Git Bash Terminal.
+6. Change the current working directory to the location you want the cloned directory to be made.
+7. Type `git clone` and paste in the copied URL from step 4.
+8. Press '**Enter**' for the local clone to be created.
+9. Using the ``pip3 install -r requirements.txt`` command, the dependencies and libraries needed for FreeFido will be installed.
+10. Set up your **env.py** file and from the above steps for ElephantSQL, gather the Elephant SQL url for addition to your code and add your SECRET_KEY and STRIPE/AWS keys if using these services.
+11. Ensure that your **env.py** file is placed in your **.gitignore** file and follow the remaining steps in the above Django Project Setup section before pushing your code to GitHub.
+
+## Fork Project
+
+A copy of the original repository can be made through GitHub. Please follow the below steps to fork this repository:  
+
+1. Navigate to GitHub and log in.  
+2. Once logged in, navigate to this repository using this link [LucaTaped Repository](https://github.com/............).
+3. Above the repository file section and to the top, right of the page is the '**Fork**' button, click on this to make a fork of this repository.
+4. You should now have access to a forked copy of this repository in your Github account.
+5. Follow the above Django Project Steps if you wish to work on the project.
+
+# Credits
+
+## Code
+
+The majority of the code in this project came from the [Code Institute's](https://codeinstitute.net/ie/) Learning Content. 
+Particularly Project 4 and 5 walkthroughs.
+
+Portfolio Project 5 - Boutique Ado provided a foundation which I took apart and altered to fit my project's design
+Postfolio Project 4 "I think therefore I blog" was used heavily for the blog section
+
+## Media
+
+- [Pexels](https://www.pexels.com/) for images used within the site
+
+<details>
+<summary>Image credits are as follows:</summary>
+
+## Acknowledgements
+
+- A huge thanks to my wife for their continued support during this project and Diploma. 
+- Much gratitude is extended to my mentor Graeme Taylor  for his expert guidance and advice during this Diploma, which gave me the confidence to make the most out of every project.
+- Thank you to my fellow students and Code Institute alumni for their guidance and support.
