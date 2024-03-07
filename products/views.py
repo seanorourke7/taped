@@ -20,11 +20,11 @@ def all_products(request):
         if 'sort' in request.GET:
             sortkey = request.GET['sort']
             sort = sortkey
-            if  sortkey == 'name':
-                sortkey = 'lower_name'
-                products = products.annotate(lower_name=Lower('name'))
-            if  sortkey == 'category':
-                sortkey = 'category__name' 
+            if sortkey == 'name':
+               sortkey = 'lower_name'
+               products = products.annotate(lower_name=Lower('name'))
+            if sortkey == 'category':
+               sortkey = 'category__name' 
 
             if 'direction' in request.GET:
                 direction = request.GET['direction']
@@ -73,7 +73,7 @@ def product_detail(request, product_id):
 def add_product(request):
     """ Add a product to the store """
     if not request.user.is_superuser:
-        messages.error(request, 'You are not authorised to do that! Please contact us for more information'  )
+        messages.error(request, 'You are not authorised to do that! Please contact us for more information')
         return redirect(reverse('home'))
     
     if request.method == 'POST':
@@ -125,10 +125,11 @@ def edit_product(request, product_id):
 def delete_product(request, product_id):
     """ Delete a product from the store """
     if not request.user.is_superuser:
-        messages.error(request, 'You are not authorised to do that! Please contact us for more information'  )
+        messages.error(request, 'You are not authorised to do that! Please contact us for more information')
         return redirect(reverse('home'))
     
     product = get_object_or_404(Product, pk=product_id)
     product.delete()
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
+    

@@ -19,13 +19,13 @@ def profile(request):
             messages.success(request, 'Profile Updated Successfully !')
 
     form = UserProfileForm(instance=profile)
-    orders= profile.orders.all()
+    orders = profile.orders.all()
     
     template = 'profiles/profile.html'
     context = {
         'form': form,
         'orders': orders,
-        'on_profile_page':True
+        'on_profile_page': True
     }
 
     return render(request, template, context)
