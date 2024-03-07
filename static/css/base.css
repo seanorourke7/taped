@@ -170,6 +170,42 @@ input[name='q']::placeholder {
     margin-top: 180px;
 }
 
+footer {
+    height: 2rem;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+#mailchimp-text{
+    font-size: medium;
+
+ }
+.socials {
+    color: #000;
+    text-align: center;
+    background-color: #cec9c0bd;
+}
+
+.socials li {
+    display: inline;
+}
+
+.socials li a {
+    text-decoration: none;
+}
+
+.socials i {
+    font-size: 300%;
+    color: #000000;
+    margin: 3%;
+    padding: 2%;
+}
+
+.page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
