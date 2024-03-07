@@ -305,3 +305,7 @@ input[name='q']::placeholder {
     border: 2px solid white;
 }
 
+#blog_image {
+    width: 500px
+}
+
