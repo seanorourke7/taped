@@ -353,6 +353,9 @@ footer {
     .increment-qty, .decrement-qty {
         padding: .25rem .5rem !important;
     }
+    #blog_image {
+        width: 300px
+    }
 
 
 }
