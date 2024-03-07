@@ -10,12 +10,12 @@
       <div class="d-md-block col-md-6 masthead-image">
         <!-- A featured image will be used if an image isnt uploaded -->
         {% if "placeholder" in post.featured_image.url %}
-        <img id="blog_image" 
+        <img class="blog_image" 
           src="https://res.cloudinary.com/dwej6pult/image/upload/v1709831622/pexels-brett-sayles-2861097_jmf6yq.jpg"
           alt="image of scooter"
         />
         {% else %}
-        <img id="blog_image"
+        <img class="blog_image"
           src=" {{ post.featured_image.url }}"
           alt="image uploaded by the post author"
         />

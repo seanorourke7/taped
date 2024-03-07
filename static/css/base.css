@@ -353,8 +353,8 @@ footer {
     .increment-qty, .decrement-qty {
         padding: .25rem .5rem !important;
     }
-    #blog_image {
-        width: 300px
+    .blog_image {
+        width: 300px;
     }
 
 
@@ -370,7 +370,7 @@ footer {
     border: 2px solid white;
 }
 
-#blog_image {
+.blog_image {
     width: 500px
 }
 
