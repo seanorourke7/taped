@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /accounts/
+Disallow: /bag/
+Sitemap: https://taped-8201a532e6b6.herokuapp.com/sitemap.xml
