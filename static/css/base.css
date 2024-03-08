@@ -6,7 +6,7 @@ body {
     background: url('https://res.cloudinary.com/dwej6pult/image/upload/v1707045699/luca4_lysb4h.png') no-repeat center center fixed;
     background-size: cover;
     height: calc(150vh - 164px);
-    color: #555;
+    color: #000000;
     font-family: 'Lato';
 }
 
@@ -305,6 +305,21 @@ footer {
     border-radius: 0;
 }
 
+#welcome-message {
+    font-family: 'Lato';
+    color: rgb(0, 0, 0);
+    background-color: #cec9c0bd;
+}
+
+#welcome-message a {
+    text-decoration:underline;
+    color: #000;
+}
+
+#welcome-header {
+    margin-top: 2rem;
+}
+
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
@@ -369,4 +384,6 @@ footer {
 .blog_image {
     width: 300px
 }
+
+
 
