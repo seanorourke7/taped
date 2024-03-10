@@ -1,8 +1,10 @@
 # LucaTaped
 
-![lucataped responsive screenshot]()
+![lucataped responsive screenshot](https://taped-8201a532e6b6.herokuapp.com/)
 
 ## Introduction
+
+Luca Taped is website designed to showcase the skillset and development of the owner (Luca) and offer a shopping experience for like-minded people who are looking to customise and enhance their own scooters.  
 
 
 
