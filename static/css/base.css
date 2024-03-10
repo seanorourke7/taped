@@ -324,7 +324,6 @@ footer {
     background-color: #fffffdc2;
     text-decoration: none;
     color: black;
-    border: red solid;
 }
 
 
@@ -412,7 +411,7 @@ a {
     color: red;
 }
 
-#red-logo {
+.red-logo {
     color:red
 }
 
