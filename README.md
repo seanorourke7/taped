@@ -131,33 +131,25 @@ When the user hovers over any of the menus in the header the color changes from 
 
 ### Color Scheme
 
-![LucaTaped Color Scheme]()
-*lucataped Color Scheme*
-Red and White to match the logo. 
 
+The color scheme is based on the red and black logo. Simple but sharp and immediatley recogniseable. 
 
 ![LucaTaped Color Scheme accessibility Check](static/media/lighthouseluca.png)  
 *LucaTaped Color Accessibility Check*
 
-![LucaTaped Color Scheme Contrast Check]()  
-*LucaTaped Color Contrast Check - Main*
-
-![LucaTaped Color Scheme Contrast Check]()  
-*LucaTaped Color Contrast Check - Button*
-
 ### Typography & Iconography
 
-![LucaTaped Font Pairing]()
-*LucaTaped Font Pairing*
+![LucaTaped Font](https://fonts.google.com/specimen/Russo+One?query=Russo+One)
+*LucaTaped Font*
 
 
 # Project Planning
 
 ## Strategy Plane
 
-The primary objective was to create an e-commerce store that satisfied the assessment criteria of the Code Institute's Project 5: E-Commerce Module. The store must provide the expected functions of a responsive e-commerce store using Stripe as a payment system, user/guest views for authentication and store features, some extra features of my choosing, such as articles, and demonstration of some marketing/SEO skills. The User, whether paying customer or just browsing, must receive the best in UX and feel that LucaTaped is relatable and trust-worthy. 
+The primary objective was to create an e-commerce store that satisfied the assessment criteria of the Code Institute's Project 5: E-Commerce Module. The store must provide the expected functions of a responsive e-commerce store using Stripe as a payment system, user/guest views for authentication and store features, some extra features of my choosing, such as a blog, and demonstration of some marketing/SEO skills. The User, whether paying customer or just browsing, must receive the best in UX and feel that LucaTaped is relatable and trust-worthy. 
 
-The site's design and graphic assets were collected through various copyright-free image websites. Images were edited for the website to be cohesive. Bootstrap and Crispy Forms were used for the project's frontend to speed up the process and to keep the templates consistent. Further customisation to the buttons, forms, modals, toasts and user feedback processes were added to the project's CSS files. 
+The site's design is based around Luca's realworld Instagram content. Images were edited for the website to be cohesive. Bootstrap and Crispy Forms were used for the project's frontend to speed up the process and to keep the templates consistent. Further customisation to the buttons, forms, modals, toasts and user feedback processes were added to the project's CSS files. 
 
 If a customer chooses to make a purchase then they are given consistent feedback through the use of 'toasts' messages and confirmation emails. The purchasing process is presented using Stripe payment handlers, obtained and setup using [Stripe's](https://stripe.com/docs) documentation and website.
 
@@ -176,7 +168,7 @@ LucaTaped followed Agile planning methodologies to its completion. [GitHub Proje
 
 ### MoSCoW Prioritization
 
-I chose to follow the MoSCoW Prioritization method for Everneed, identifying and labeling my:
+I chose to follow the MoSCoW Prioritization method for LucaTaped, identifying and labeling my:
 
 - **Must Haves**: the 'required', critical components of the project. Completing my 'Must Haves' helped me to reach the MVP (Minimum Viable Product) for this project.
 - **Should Haves**: the components that are valuable to the project but not absolutely 'vital' at the MVP stage. The 'Must Haves' must receive priority over the 'Should Haves'.
@@ -187,27 +179,27 @@ I chose to follow the MoSCoW Prioritization method for Everneed, identifying and
 
 My Sprints were broken down into appropriately sized chunks from the beginning and I followed them to the best of my abilities.
 
-| Sprint No. | Sprint Content | Start/Finish Dates |
-|------------|----------------|--------------------|
+| Sprint No. | Sprint Content | 
+|------------|----------------|
 |    # 1     | Project Setup  |
 |    # 2     | AllAuth & Basic Navigation |
 |    # 3     | Product Views & CRUD  |
 |    # 4     | Shopping Bag Functionality & Styling |
-|    # 5     | Blog  |  20/01/2024 - 08/01/2024    |
-|    # 6     | Carbon Footprint & Articles  |
-|    # 7     | Admin Dashboard  |
+|    # 5     | Blog  |
+|    # 6     | Comments |
+|    # 7     | Admin access  |
 |    # 8     | User/Customer Correspondence |
 |    # 9     | Documentation & Testing   |
 
 ## Marketing
 
-An [LucaTaped Facebook Page](https://www.facebook.com/) was created to demonstrate promotion of the LucaTaped store on social media. Posts informing customers of deals and new products would be made on the page with the hopes of drawing in more revenue. Facebook provides an easy, minimal-step process to allow business owners to promote their business, with additional paid 'boost' features to further promote and spread the reach of the posts. LucaTaped also offers a newsletter subscription service through MailChimp. The benefit of both of these services is that the customer is not forced to sign up to either and potentially worry that they will be spammed with an unnecessary amount of information. 
+An [LucaTaped Facebook Page](https://www.facebook.com/people/LucaTaped/61557013865668/) was created to demonstrate promotion of the LucaTaped store on social media. Posts informing customers of deals and new products would be made on the page with the hopes of drawing in more revenue. Facebook provides an easy, minimal-step process to allow business owners to promote their business, with additional paid 'boost' features to further promote and spread the reach of the posts. LucaTaped also offers a newsletter subscription service through MailChimp. The benefit of both of these services is that the customer is not forced to sign up to either and potentially worry that they will be spammed with an unnecessary amount of information. 
 
-Within the head's meta tags of the base template are researched keywords and a description of LucaTaped's goal as a business. These keywords have been researched using[Wordtracker](https://www.wordtracker.com/) to ensure that both short-tail and long-tail keywords are included. Keywords such as 'scooter', 'stunts' and 'skatepark' aim to reach most of the market, with additional descriptive key phrases such as 'buy scooter accessories' and 'buy grip tape' to draw in users who know exactly what type of product they are looking for. Important keywords like 'Grip Tape' and 'Scooter' are present in the product names and descriptions in the hope to catch a chance to appear at the top of the customers' Google searches.
+Within the head's meta tags of the base template are researched keywords and a description of LucaTaped's goal as a business. These keywords have been researched to ensure that both short-tail and long-tail keywords are included. Keywords such as 'scooter', 'stunts' and 'skatepark' aim to reach most of the market, with additional descriptive key phrases such as 'buy scooter accessories' and 'buy grip tape' to draw in users who know exactly what type of product they are looking for. Important keywords like 'Grip Tape' and 'Scooter' are present in the product names and descriptions in the hope to catch a chance to appear at the top of the customers' Google searches.
 
 In addition to this, sitemap.xml and robots.txt files are included to increase the site's visibility. These files are essential for SEO (Search Engine Optimisation). The sitemap.xml was generated using [XML Sitemap](https://www.xml-sitemaps.com/) and included in the root folder of the project. A robots.txt file was created in the root folder to instruct search engine crawlers on how to access and crawl the site's pages.
 
-![LucaTaped Facebook Business Page](.png)
+![LucaTaped Facebook Business Page](static/media/facebook.png)
 *LucaTaped Facebook Business Page*
 
 ## User Stories
@@ -272,7 +264,7 @@ User stories and features were recorded and managed on [GitHub Projects]()
 
 A working e-commerce store was essential so I initially planned to keep to the MVP to ensure that I would complete the project successfully. Especially with the project being my final one for this Diploma. 
 
-Adding an Articles feature posted solely by the Admin of the website felt important to give more information to the customers and to showcase my ability as a developer. 
+Adding a blog feature posted solely by the Admin of the website felt important to give more information to the customers and to showcase my ability as a developer. 
 
 Django's MVT framework allowed these features to be built quickly and the addition of an Admin frontend panel for managing products and articles created a robust e-commerce site that could start taking orders tomorrow.
 
@@ -280,6 +272,7 @@ Essential features were:
 - User Accounts with AllAuth
 - Payment system with Stripe
 - Articles creation and management - Full CRUD
+- Comments creation and management - Full CRUD
 - Product inventory management - Full CRUD
 - Shopping UX with Bag and Checkout processes - Full CRUD
 - Site responsivity
@@ -295,66 +288,26 @@ Form validation has been left with it's original styling as no change was needed
 
 ### Wireframes
 
-[Figma](https://www.figma.com) was used to create basic wireframes for LucaTaped. I had a vision of what the site would look like from the beginning so the planning process went smoothly. Figma allows easy creation of wireframes to the appropriate frame sizes for different screens. Addition of icons and extra design features is easy with their Plugins component which can connect to Flaticon for example.
+[Figma](https://uizard.io) was used to create basic wireframes for LucaTaped. I had a vision of what the site would look like from the beginning so the planning process went smoothly. Uizard allows easy creation of wireframes to the appropriate frame sizes for different screens.
 
 <details open>
-    <summary>Desktop/Tablet Home Page Wireframe</summary>  
-    <img src=".png">  
-</details>
-
-<details>
-    <summary>Mobile Home Page Wireframe</summary>  
-    <img src=".png">  
-</details>
-
-<details>
-    <summary>Mobile Home Page Wireframe</summary>  
-    <img src=".png">  
+    <summary>Home Page Wireframe</summary>  
+    <img src="static/media/mockuphome.png">  
 </details>
 
 <details open>
-    <summary>Desktop/Tablet/Mobile All Products Page Wireframe</summary>  
-    <img src=".png">  
-</details>
-
-<details open>
-    <summary>Desktop/Tablet Product Page Wireframe</summary>  
-    <img src=".png">  
+    <summary>Products Page Wireframe</summary>  
+    <img src="static/media/mockupshop.png">  
 </details>
 
 <details>
-    <summary>Shopping Bag Wireframe</summary>  
-    <img src=".png">  
-</details>
-
-<details>
-    <summary>Bag Contents Toast Wireframe</summary>  
-    <img src=".png">  
-</details>
-
-<details open>
-    <summary>Mobile Menu & Auth Pages Wireframe</summary>  
-    <img src=".png">  
-</details>
-
-<details>
-    <summary>Desktop Register Page Wireframe</summary>  
-    <img src=".png">  
-</details>
-
-<details>
-    <summary>Desktop SignIn Page Wireframe</summary>  
-    <img src=".png">  
-</details>
-
-<details>
-    <summary>Desktop SignOut Wireframe</summary>  
-    <img src=".png">  
+    <summary>Blog Page Wireframe</summary>  
+    <img src="static/media/mockupblog.png">  
 </details>
 
 ### Database Schema
 
-![LucaTaped Ecommerce ERC](.png)  
+![LucaTaped Ecommerce ERC]()  
 *Database Schema (ERD) for LucaTaped displaying relationships between feature components saved within the database*
 
 [Lucidchart](https://www.lucidchart.com/pages/) was used to create the ERD(Entity Relationship Diagram) for LucaTaped. To satisfy the assessment criteria, multiple models were created to personalise the LucaTaped project. These include:
