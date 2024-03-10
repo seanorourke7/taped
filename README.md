@@ -1,6 +1,12 @@
 # LucaTaped
 
-![lucataped responsive screenshot](https://taped-8201a532e6b6.herokuapp.com/)
+![lucataped desktop home screenshot](static/media/desktophome.png)
+![lucataped desktop shop screenshot](static/media/desktopshop.png)
+![lucataped desktop blog screenshot](static/media/desktopblog.png)
+![lucataped mobile home screenshot](static/media/mobilehome.png)
+![lucataped mobile shop screenshot](static/media/mobileshop.png)
+![lucataped mobile blog screenshot](static/media/mobileblog.png)
+
 
 ## Introduction
 
@@ -8,7 +14,7 @@ Luca Taped is website designed to showcase the skillset and development of the o
 
 
 
-View live site: [LucaTaped]()
+View live site: [LucaTaped](https://taped-8201a532e6b6.herokuapp.com/)
 
 If you wish to make a test purchase, you can use the following [Stripe Dummy Card](https://stripe.com/docs/testing) details:
 
@@ -20,9 +26,9 @@ If you wish to make a test purchase, you can use the following [Stripe Dummy Car
 
 Any payments made using a valid debit/credit card will not be processed and the card will not be charged. No orders made will be fulfilled.
 
-For full Admin access to Django Admin panel with relevant sign-in credentials: [LucaTaped Admin](/admin/)
+For full Admin access to Django Admin panel with relevant sign-in credentials: [LucaTaped Admin](https://taped-8201a532e6b6.herokuapp.com/admin/)
 
-For access to Admin Dashboard frontend view with relevant sign-in credentials: [LucaTaped Admin Dashboard](/products/admin_dashboard/)
+Access to Admin to add products from the frontend with relevant sign-in credentials: [LucaTaped Admin Dashboard](https://taped-8201a532e6b6.herokuapp.com/products/add/)
 
 ## Table of Contents
 
@@ -95,40 +101,42 @@ LucaTaped is a products store and blog hosting platform. Users are invited to:
 - As registered users, view past orders and comment on blog posts
 - Sign up for a weekly newsletters
 
-LucaTaped is accessible via all browsers with full responsiveness on different screen sizes. Its aim is to showcase the skillset of scooter stunts and offer relevant products for sale. 
+LucaTaped is accessible via all browsers with full responsiveness on different screen sizes. Its aim is to showcase the skillset of the owner (Luca) and offer relevant products for sale. 
 
 ## Customer Goals
 
-Customers are provided with an easy, intuitive shopping experience and are encouraged to avail of relevant scooter accessories and merchandise. It is hoped that customers will sign up/register an account to be able to avail of the full range of user features. A sense of community is created with a weekly newsletter which will inform the customers of new products, trends and articles on lucataped.
+Customers are provided with an easy, intuitive shopping experience and are encouraged to avail of relevant scooter accessories and merchandise. There is also a blog that is regularly updated to keep the users coming back and it is hoped that customers will sign up/register an account to be able to avail of the full range of user features. A sense of community is created with teh ability to comment on blog posts as welll as a weekly newsletter which will inform the customers of new products, trends and articles on lucataped.
 
 ## Business Goals
 
-LucaTaped provides easy Admin functionality for the business owner with an accessible, easy-use Admin Dashboard to manage inventory and articles. The additional frontend forms allows the business owner to make quick and easy changes, Add/Edit/Delete Products and publish new articles to the blog. 
+LucaTaped provides easy Admin functionality for the business owner with an accessible, easy-use Admin access to manage inventory. The additional frontend forms allows the business owner to make quick and easy changes, Add/Edit/Delete Products and publish new articles to the blog. 
 
-LucaTaped seeks to build a strong base of regular shoppers who seek quality products relevant to their interests. The newsletter and articles are disgned to showcse the constant inprovement Luca in making in his skills and to showcase new products available for sale. Further marketing is made through the businesses social media channels, in particular their Facebook and Instagram page.
+LucaTaped seeks to build a strong base of regular shoppers who seek quality products relevant to their interests. The newsletter and articles are disgned to showcase the constant inprovement Luca in making in his skills and to showcase new products available for sale. Further marketing is made through the businesses social media channels, in particular the Facebook and Instagram page.
 
 # UX/UI - User Experience/User Interface
 
 ## Design Inspiration
 
-From the beginning of the project, I knew that the colour palette would reflect nature with shades of green acting as the primary colour, in particular forest green, #194f49. The website is kept clean, with good flow, using plenty of white space to draw attention to the products and the website's mission in reducing the carbon footprints of its users.
+The website is kept clean, with good flow and simple color contrasts. The logo is red and black and I have used that theme throughout the site to keep it uniform and accessible. I have made the white text areas slightly transparant to reduce the sharpness of the white and give a more pleasing appearance to the user. 
 
-A simple logo, created using [LogoAI](https://www.logoai.com) is used as a header and an email branding logo. It's simple and effective design is eye catching and easily recogniseable. 
+A simple logo again of red and black lettering, is used as a header. It's simple and effective design is eye catching and easily recogniseable. 
 
-![lucatpaed logo]()  
+![lucatpaed logo](static/media/LOGO.png)  
 
-Product images are kept clean with no backgrounds so that focus is on the product itself. Feedback is continuously provided to the user via the website's header which displays whether the user is logged in and how much their shopping total is currently. Message 'toasts' are also visible upon user actions to display further information. Buttons are kept similar for continuity.
+Product images are kept clean with no backgrounds so that focus is on the product itself. Feedback is continuously provided to the user via the website's header which displays how much their shopping total is currently. Message 'toasts' are also visible upon user actions to display further information. Buttons are kept similar for continuity.
 
-![Header Feedback]()  
+![Header Feedback](static/media/headerfeedback.png)  
 *Header feedback is kept clean and intuitive*
+When the user hovers over any of the menus in the header the color changes from black to red in keeping with the style of the site. 
 
 ### Color Scheme
 
 ![LucaTaped Color Scheme]()
 *lucataped Color Scheme*
+Red and White to match the logo. 
 
 
-![LucaTaped Color Scheme accessibility Check]()  
+![LucaTaped Color Scheme accessibility Check](static/media/lighthouseluca.png)  
 *LucaTaped Color Accessibility Check*
 
 ![LucaTaped Color Scheme Contrast Check]()  
