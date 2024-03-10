@@ -116,6 +116,7 @@ class DeletePost(View):
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
         post.delete()
+        messages.info(request, f'Post has been Deleted')
         return HttpResponseRedirect(reverse('home'))
 
 # view for editing posts by the user
