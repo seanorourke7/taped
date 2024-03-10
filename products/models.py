@@ -23,6 +23,8 @@ class Product(models.Model):
     description = models.TextField()
     has_sizes = models.BooleanField(default=False, null=True, blank=True)
     customiseable = models.BooleanField(default=False, null=True, blank=True)
+    on_sale = models.BooleanField(default=False, null=True, blank=True)
+    sale_price = models.DecimalField(max_digits=6, decimal_places=2)
     price = models.DecimalField(max_digits=6, decimal_places=2)
     rating = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
     image = CloudinaryField('image', default='placeholder')
