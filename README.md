@@ -1,5 +1,12 @@
 # LucaTaped
 
+## Introduction
+
+Luca Taped is website designed to showcase the skillset and development of the owner (Luca) and offer a shopping experience for like-minded people who are looking to customise and enhance their own scooters.  
+
+View live site: [LucaTaped](https://taped-8201a532e6b6.herokuapp.com/)
+
+## Site Responsivness
 ![lucataped desktop home screenshot](static/media/desktophome.png)
 ![lucataped desktop shop screenshot](static/media/desktopshop.png)
 ![lucataped desktop blog screenshot](static/media/desktopblog.png)
@@ -7,14 +14,6 @@
 ![lucataped mobile shop screenshot](static/media/mobileshop.png)
 ![lucataped mobile blog screenshot](static/media/mobileblog.png)
 
-
-## Introduction
-
-Luca Taped is website designed to showcase the skillset and development of the owner (Luca) and offer a shopping experience for like-minded people who are looking to customise and enhance their own scooters.  
-
-
-
-View live site: [LucaTaped](https://taped-8201a532e6b6.herokuapp.com/)
 
 If you wish to make a test purchase, you can use the following [Stripe Dummy Card](https://stripe.com/docs/testing) details:
 
@@ -34,6 +33,7 @@ Access to Admin to add products from the frontend with relevant sign-in credenti
 
 - [LucaTaped](#lucataped)
   - [Introduction](#introduction)
+  - [Introduction](#site-responsivness)
   - [Table of Contents](#table-of-contents)
   - [Overview](#overview)
   - [Customer Goals](#customer-goals)
