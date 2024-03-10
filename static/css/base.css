@@ -308,7 +308,7 @@ footer {
 #welcome-message {
     font-family: 'Lato';
     color: rgb(0, 0, 0);
-    background-color: #cec9c0bd;
+    background-color: #fffffdc2;
 }
 
 #welcome-message a {
@@ -326,15 +326,16 @@ footer {
     color: black;
 }
 
+
+
 iframe {
-    width: 400px;
+        width: 250px;
+}
+ 
+a {
+    color: #000;
 }
 
-@media (max-width: 1350px) {
-    iframe {
-        width: 200px;
-    }
-}
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
     .fixed-top-desktop-only {

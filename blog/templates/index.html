@@ -7,7 +7,7 @@
       <div class="row">
         {% for post in post_list %}
         <div class="col-md-4">
-          <div class="card mb-4">
+          <div class="post-detail card mb-4">
             <div class="card-body">
               <div class="image-container">
                 {% if "placeholder" in post.featured_image.url %}
@@ -16,12 +16,13 @@
                   src="https://res.cloudinary.com/dwej6pult/image/upload/v1709831622/pexels-brett-sayles-2861097_jmf6yq.jpg"
                   alt="default image of scooter">
                 {% else %}
-                <img
+                <a href="{% url 'post_detail' post.slug %}"><img
                   class="card-img-top"
-                  src=" {{ post.featured_image.url }}" alt="image uploaded by author">
+                  src=" {{ post.featured_image.url }}" alt="image uploaded by author"></a>
                 {% endif %}
               </div>
-              <a href="{% url 'post_detail' post.slug %}" class="post-link">
+              <a href="{% url 'post_detail' post.slug %}" >
+                <p> {{ post.title | safe }}</p>
                 <p> {{ post.content | safe }}</p>
               </a>
               <hr>
@@ -42,13 +43,13 @@
     <ul class="pagination justify-content-center">
       {% if page_obj.has_previous %}
       <li>
-        <a href="?page={{ page_obj.previous_page_number }}" class="page-link"
+        <a href="?page={{ page_obj.previous_page_number }}" class="btn btn-black rounded-0 text-uppercase float-left post_edit"
           >&laquo; PREV
         </a>
       </li>
       {% endif %} {% if page_obj.has_next %}
       <li>
-        <a href="?page={{ page_obj.next_page_number }}" class="page-link">
+        <a href="?page={{ page_obj.next_page_number }}" class="btn btn-black rounded-0 text-uppercase float-left post_edit">
           NEXT &raquo;</a
         >
       </li>

@@ -127,3 +127,4 @@ class EditPost(UpdateView):
     template_name = 'edit_post.html'
     fields = ['title', 'content', 'featured_image', 'status']
     success_url = reverse_lazy('home')
+    
