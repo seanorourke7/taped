@@ -143,7 +143,7 @@ The color scheme is based on the red and black logo. Simple but sharp and immedi
 
 ### Typography & Iconography
 
-![LucaTaped Font](https://fonts.google.com/specimen/Russo+One?query=Russo+One)
+![LucaTaped Font](https://fonts.google.com/specimen/Russo+One?query=Russo+One/)
 *LucaTaped Font*
 
 The Font is Russo One from google fonts. This is chosen as it is a strong font that gives the site a cooler appearance to the target audience. 
@@ -294,7 +294,7 @@ Form validation has been left with it's original styling as no change was needed
 
 ### Wireframes
 
-[Figma](https://uizard.io) was used to create basic wireframes for LucaTaped. I had a vision of what the site would look like from the beginning so the planning process went smoothly and it was very similar in structure to the boutique ado walkthough. Uizard allows easy creation of wireframes to the appropriate frame sizes for different screens.
+[Uizard](https://uizard.io) was used to create basic wireframes for LucaTaped. I had a vision of what the site would look like from the beginning so the planning process went smoothly and it was very similar in structure to the boutique ado walkthough. Uizard allows easy creation of wireframes to the appropriate frame sizes for different screens.
 
 <details open>
     <summary>Home Page Wireframe</summary>  
@@ -321,6 +321,10 @@ Form validation has been left with it's original styling as no change was needed
 - **Comments**: Comments may be added by registered users on blog posts.
 - **Product**: I used the Boutique Ado Product model as a template for the products and added the option for items to be on sale and for items to be customised. 
 
+<details>
+    <summary>Customised Product Model based on the boutique ado walkthrough - Allows for products to be marked as on-sale and/or customisable</summary>  
+    <img src="static/media/productmodel.png">  
+</details>
 
 Future Feature models are visible in the ERD for Reviews and Discount Codes. These will be incorporated into the next version of LucaTaped. At the moment they are beyond the MVP.
 
@@ -571,7 +575,7 @@ Postfolio Project 4 "I think therefore I blog" was used heavily for the blog sec
 
 ## Media
 
-- [Pexels](https://www.pexels.com/) for polaceholder image used within the site
+- [Pexels](https://www.pexels.com/) for placeholder image used within the site
 - [Instagram](https://www.instagram.com/luca_tapedoffical/) for images used within the site.
 
 <details>
