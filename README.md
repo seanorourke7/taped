@@ -6,15 +6,6 @@ Luca Taped is website designed to showcase the skillset and development of the o
 
 View live site: [LucaTaped](https://taped-8201a532e6b6.herokuapp.com/)
 
-## Site Responsivness
-![lucataped desktop home screenshot](static/media/desktophome.png)
-![lucataped desktop shop screenshot](static/media/desktopshop.png)
-![lucataped desktop blog screenshot](static/media/desktopblog.png)
-![lucataped mobile home screenshot](static/media/mobilehome.png)
-![lucataped mobile shop screenshot](static/media/mobileshop.png)
-![lucataped mobile blog screenshot](static/media/mobileblog.png)
-
-
 If you wish to make a test purchase, you can use the following [Stripe Dummy Card](https://stripe.com/docs/testing) details:
 
 - Success Card Number: 4242424242424242
@@ -103,15 +94,23 @@ LucaTaped is a products store and blog hosting platform. Users are invited to:
 
 LucaTaped is accessible via all browsers with full responsiveness on different screen sizes. Its aim is to showcase the skillset of the owner (Luca) and offer relevant products for sale. 
 
+## Site Responsivness
+![lucataped desktop home screenshot](static/media/desktophome.png)
+![lucataped desktop shop screenshot](static/media/desktopshop.png)
+![lucataped desktop blog screenshot](static/media/desktopblog.png)
+![lucataped mobile home screenshot](static/media/mobilehome.png)
+![lucataped mobile shop screenshot](static/media/mobileshop.png)
+![lucataped mobile blog screenshot](static/media/mobileblog.png)
+
 ## Customer Goals
 
-Customers are provided with an easy, intuitive shopping experience and are encouraged to avail of relevant scooter accessories and merchandise. There is also a blog that is regularly updated to keep the users coming back and it is hoped that customers will sign up/register an account to be able to avail of the full range of user features. A sense of community is created with teh ability to comment on blog posts as welll as a weekly newsletter which will inform the customers of new products, trends and articles on lucataped.
+Customers are provided with an easy, intuitive shopping experience and are encouraged to avail of relevant scooter accessories and merchandise. There is also a blog that is regularly updated to keep the users coming back and it is hoped that customers will sign up/register an account to be able to avail of the full range of user features. A sense of community is created with the ability to comment on blog posts as well as a weekly newsletter which will inform the customers of new products, trends and articles on lucataped.
 
 ## Business Goals
 
 LucaTaped provides easy Admin functionality for the business owner with an accessible, easy-use Admin access to manage inventory. The additional frontend forms allows the business owner to make quick and easy changes, Add/Edit/Delete Products and publish new articles to the blog. 
 
-LucaTaped seeks to build a strong base of regular shoppers who seek quality products relevant to their interests. The newsletter and articles are disgned to showcase the constant inprovement Luca in making in his skills and to showcase new products available for sale. Further marketing is made through the businesses social media channels, in particular the Facebook and Instagram page.
+LucaTaped seeks to build a strong base of regular shoppers who seek quality products relevant to their interests. The newsletter and articles are designed to showcase the constant inprovement Luca in making in his skills and to showcase new products available for sale. Further marketing is made through the businesses social media channels, in particular the Facebook and Instagram page.
 
 # UX/UI - User Experience/User Interface
 
@@ -142,6 +141,8 @@ The color scheme is based on the red and black logo. Simple but sharp and immedi
 ![LucaTaped Font](https://fonts.google.com/specimen/Russo+One?query=Russo+One)
 *LucaTaped Font*
 
+The Font is Russo One from google fonts. This is chosen as it is a strong font that gives the site a cooler appearance to the target audience. 
+
 
 # Project Planning
 
@@ -156,11 +157,11 @@ If a customer chooses to make a purchase then they are given consistent feedback
 ### Site Goals
 
 - Site provides enjoyable experience for shoppers.
-- Customers are educated about Luca's progress and Scooter stunt skills and are also encouraged to engage across different platforms.
 - Customers feel informed that they are making a good choice shopping with LucaTaped.
 - UX remains similar across screen sizes.
 - CRUD functionalities work as intended with easy to use frontend forms.
 - Scalable site to allow for extra features in the future.
+- Customers are educated about Luca's progress and Scooter stunt skills and are also encouraged to engage across different platforms.
 
 ## Agile Methodologies
 
@@ -193,7 +194,7 @@ My Sprints were broken down into appropriately sized chunks from the beginning a
 
 ## Marketing
 
-An [LucaTaped Facebook Page](https://www.facebook.com/people/LucaTaped/61557013865668/) was created to demonstrate promotion of the LucaTaped store on social media. Posts informing customers of deals and new products would be made on the page with the hopes of drawing in more revenue. Facebook provides an easy, minimal-step process to allow business owners to promote their business, with additional paid 'boost' features to further promote and spread the reach of the posts. LucaTaped also offers a newsletter subscription service through MailChimp. The benefit of both of these services is that the customer is not forced to sign up to either and potentially worry that they will be spammed with an unnecessary amount of information. 
+An [LucaTaped Facebook Page](https://www.facebook.com/people/LucaTaped/61557013865668/) was created to demonstrate promotion of the LucaTaped store on social media. Posts informing customers of deals and new products would be made on the page with the hopes of drawing in more revenue. Facebook provides an easy, minimal-step process to allow business owners to promote their business, with additional paid 'boost' features to further promote and spread the reach of the posts. LucaTaped also offers a newsletter subscription service through MailChimp. 
 
 Within the head's meta tags of the base template are researched keywords and a description of LucaTaped's goal as a business. These keywords have been researched to ensure that both short-tail and long-tail keywords are included. Keywords such as 'scooter', 'stunts' and 'skatepark' aim to reach most of the market, with additional descriptive key phrases such as 'buy scooter accessories' and 'buy grip tape' to draw in users who know exactly what type of product they are looking for. Important keywords like 'Grip Tape' and 'Scooter' are present in the product names and descriptions in the hope to catch a chance to appear at the top of the customers' Google searches.
 
@@ -288,7 +289,7 @@ Form validation has been left with it's original styling as no change was needed
 
 ### Wireframes
 
-[Figma](https://uizard.io) was used to create basic wireframes for LucaTaped. I had a vision of what the site would look like from the beginning so the planning process went smoothly. Uizard allows easy creation of wireframes to the appropriate frame sizes for different screens.
+[Figma](https://uizard.io) was used to create basic wireframes for LucaTaped. I had a vision of what the site would look like from the beginning so the planning process went smoothly and it was very similar in structure to the boutique ado walkthough. Uizard allows easy creation of wireframes to the appropriate frame sizes for different screens.
 
 <details open>
     <summary>Home Page Wireframe</summary>  
@@ -312,10 +313,11 @@ Form validation has been left with it's original styling as no change was needed
 
 [Lucidchart](https://www.lucidchart.com/pages/) was used to create the ERD(Entity Relationship Diagram) for LucaTaped. To satisfy the assessment criteria, multiple models were created to personalise the LucaTaped project. These include:
 - **Articles**: Articles may be added by Admin with image and text fields within the Add/Edit Article forms.
-- **Product**: The Boutique Ado Product model was used to add, edit and delete products from the shopping bag. 
+- **Comments**: Comments may be added by registered users on blog posts.
+- **Product**: I used the Boutique Ado Product model as a template for the products and added the option for items to be on sale and for items to be customised. 
 
 
-Future Feature models are visible in the ERD for Reactions, Reviews and Discount Codes. These will be incorporated into the next version of LucaTaped. At the moment they are beyond the MVP.
+Future Feature models are visible in the ERD for Reviews and Discount Codes. These will be incorporated into the next version of LucaTaped. At the moment they are beyond the MVP.
 
 ### Defensive Design
 
@@ -339,13 +341,13 @@ CSRF (Cross-Site Request Forgery) tokens are included in every form to help auth
 | Feature   | Guest | Registered, Account Holder |
 |-----------|-------------------|-----------------|
 | Home Page | Visible           | Visible         |
-| Account  | Not Visible - 'Account' option only appears for registered, logged-in users | Visible and full feature interaction available |
-| All Products  | Visable - items can be viewed and added to Bag, | Visible and full feature interaction available |
+| My Account  | Visible - Offers option to login or register | Visible and full feature interaction available |
+| All Products  | Visible - items can be viewed and added to Bag, | Visible and full feature interaction available |
 | Categories   | Visible - items can be viewed and added to Bag,  | Visible and full feature interaction available |
 | Blog   | Visible | Visible |
-| Comment   | Not Visible | Only visible to registered users |
+| Add Comment   | Not Visible | Only visible to registered users |
 | Search  | Visible | Visible |
-| Contact Us/Newsletter | Visible | Visible |
+| Newsletter | Visible | Visible |
 | Product Management | Not Visible | Only visible to Admin |
 | Create a Post | Not Visible | Only visible to Admin |
 
