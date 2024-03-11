@@ -306,8 +306,8 @@ Form validation has been left with it's original styling as no change was needed
     <img src="static/media/mockupshop.png">  
 </details>
 
-<details>
-    <summary>Blog Page Wireframe</summary>  
+<details open>
+    <summary open>Blog Page Wireframe</summary>  
     <img src="static/media/mockupblog.png">  
 </details>
 
@@ -321,7 +321,7 @@ Form validation has been left with it's original styling as no change was needed
 - **Comments**: Comments may be added by registered users on blog posts.
 - **Product**: I used the Boutique Ado Product model as a template for the products and added the option for items to be on sale and for items to be customised. 
 
-<details>
+<details open>
     <summary>Customised Product Model based on the boutique ado walkthrough - Allows for products to be marked as on-sale and/or customisable</summary>  
     <img src="static/media/productmodel.png">  
 </details>
