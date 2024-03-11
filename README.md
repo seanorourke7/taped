@@ -389,103 +389,73 @@ Once the Checkout form has been submitted, a loading spinner informs the user th
 
 <details open>
     <summary>Stripe Webhook/Payment Successful - Admin</summary>  
-    <img src=".png">  
+    <img src="static/media/checkoutwebhook.png">  
 </details>
 
 <details open>
-    <summary>Checkout Desktop</summary>  
-    <img src=".png">  
-</details>
-
-<details open>
-    <summary>Checkout Mobile</summary>  
-    <img src=".png">  
+    <summary>Checkout Form</summary>  
+    <img src="static/media/checkoutform.png">  
 </details>
 
 <details>
-    <summary>Checkout Stripe Form</summary>  
-    <img src=".png">  
+    <summary>Checkout Success</summary>  
+    <img src="static/media/checkoutsuccess.png">  
 </details>
 
-A confirmation email for the order is emailed to all customers. This details their spending amount and the date of their purchase. Their totals and items purchased are also visible in the checkout success page upon successful payment processing. If the user is logged in, they can view this order and all previous orders, if they were logged in at the time of purchase, in their account view.
-
-<details>
-    <summary>Confirmation Email for Purchases</summary>  
-    <img src=".png">  
-</details>
-
-<details>
-    <summary>Checkout Success - All Users who've made a purchase</summary>  
-    <img src=".png">  
-</details>
+A confirmation email for the order is emailed to all customers. This details their spending amount and the date of their purchase. Their totals and items purchased are also visible in the checkout success page upon successful payment processing. If the user is logged in, they can view this order and all previous orders.
 
 <details>
     <summary>Order History - All Users who've made a purchase with a registered, logged-in account</summary>  
-    <img src=".png">  
+    <img src="static/media/checkoutorders.png">  
 </details>
 
 **Admin Dashboard - Logged in Admin/Superuser only**
 
-When developing this project it was important to me to have a separate Admin area accessible via the frontend, in addition to the Django Backend Panel. I fulfilled this by separating out the CRUD features for the Admin/Superuser into an Admin Dashboard. This provides a direct link to editable forms for adding/editing products and articles. A separated 'Admin' view (viewable only to the Admin when they are logged in) has been created for Articles and Products with lists that display 'Edit' and 'Delete' Buttons. The 'Add' buttons bring the Admin directly to adding products or articles. Crispy Forms and Summernote render forms that allow for a high degree of editing, manipulation and connection to the database models.
+When developing this project it was important to me to have a separate Admin area accessible via the frontend, in addition to the Django Backend Panel. I fulfilled this by separating out the CRUD features for the Admin/Superuser into an Admin Dashboard. This provides a direct link to editable forms for adding/editing products and articles. A separated 'Admin' view (viewable only to the Admin when they are logged in) has been created for Blog Posts and Products with lists that display 'Edit' and 'Delete' Buttons. The 'Create a Post' button brings the Admin directly to adding a new blog post. The 'Product Management' button brings the Admin directly to adding a new product. Crispy Forms and Summernote render forms that allow for a high degree of editing, manipulation and connection to the database models.
 
 <details open>
     <summary>Admin Dashboard View - Admin Only</summary>  
-    <img src=".png">  
+    <img src="static/media/adminmenu.png">  
 </details>
 
 <details open>
-    <summary>Admin Django Backend Panel - Admin Only</summary>  
-    <img src=".png">  
+    <summary>Admin add Post - Admin Only</summary>  
+    <img src="static/media/adminaddpost.png">  
 </details>
 
-**Footer - All Users**
+<details open>
+    <summary>Admin add Product - Admin Only</summary>  
+    <img src="static/media/adminaddproduct.png">  
+</details>
 
-LucaTaped's footer is .................
+<details open>
+    <summary>Admin delete/edit Post - Admin Only</summary>  
+    <img src="static/media/admindeletepost.png">  
+</details>
 
-The stores Privacy Policy and Terms and Conditions follow underneath. The Privacy Policy opens in a new tab whilst the Terms and Conditions are displayed on a new LucaTaped webpage thanks to [Termly's](https://termly.io/) pasteable HTML block, once you have given the relevant business details. Finishing off that column are the business's Social Media connections. A Facebook page for LucaTaped opens in a new tab, as does the Instagram page. My GitHub is also connected and will open in a new tab.
+<details open>
+    <summary>Admin delete/edit Product - Admin Only</summary>  
+    <img src="static/media/admindeleteproducts.png">  
+</details>
+
+
+**Footer**
+
+LucaTaped's footer is used for the home page only to keep the flow of the site uncluttered. 
+
+Featured are the links to social media accounts with easily recognisable icons from font awesome and the option to sign up to a newsletter courtesy of mailchimp. 
+
+The stores Privacy Policy and Terms and Conditions follow underneath. 
+The Privacy Policy opens in a new tab thanks to [Termly's](https://termly.io/) pasteable HTML block. 
 
 <details open>
     <summary>Footer - All Users</summary>  
-    <img src=".png">  
-</details>
-
-<details >
-    <summary>Privacy Policy - All Users</summary>  
-    <img src=.png">  
-</details>
-
-<details >
-    <summary>Terms & Conditions - All Users</summary>  
-    <img src=".png">  
-</details>
-
-**Contact Us - All Users**
-
-A brief contact form is offered in the footer of Everneed for any queries the customer may have. Once they have submitted their name, email and message, a thank you page is displayed, with a 'Return Home' button. The Admin may view the messages in their connected business email service and reply directly to the customer.
-
-<details open>
-    <summary>Contact Us Form - All Users</summary>  
-    <img src=".png">  
-</details>
-
-<details open>
-    <summary>Contact Form Thank You</summary>  
-    <img src=".png">  
-</details>
-
-<details open>
-    <summary>Contact Form Email</summary>  
-    <img src=".png">  
+    <img src="static/media/footer.png">  
 </details>
 
 **Newsletter - All Users who subscribe**
 
-LucaTaped customers are invited to subscribe to LucaTaped's weekly newsletter. This form is located on every page in the footer. The newsletter service is offered through Mailchimp. The newsletter aims to keep customers informed of discounts, new products, sales and new blog entries on a weekly basis. On entering their email and clicking subscribe, the user is brought to a new page in a new tab confirming their subscription to LucaTaped. They may unsubscribe from here or from the bottom of the weekly newsletter.  
-
-<details open>
-    <summary>LucaTaped Newsletter Form</summary>  
-    <img src=".png">  
-</details>
+LucaTaped customers are invited to subscribe to LucaTaped's weekly newsletter. This form is located in the footer. The newsletter service is offered through Mailchimp. The newsletter aims to keep customers informed of discounts, new products, sales and new blog entries on a weekly basis. On entering their email and clicking subscribe, the user is brought to a new page in a new tab confirming their subscription to LucaTaped. They may unsubscribe from here or from the bottom of the weekly newsletter.  
 
 <details>
     <summary>MailChimp Newsletter Sign Up Confirmation</summary>  
@@ -494,27 +464,27 @@ LucaTaped customers are invited to subscribe to LucaTaped's weekly newsletter. T
 
 <details>
     <summary>MailChimp Newsletter Example</summary>  
-    <img src=".png">  
+    <img src="static/media/mailchimpsignup.png">  
 </details>
 
-**404 Page - All Users**
+**404 Page**
 
-If a customer navigates to a page that does not exist eg 'LucaTaped-*******.com/test/' this page is displayed to the user. A 'Go Home' button takes the user back to the Home page.
+If a customer navigates to a page that does not exist eg 'LucaTaped-*******.com/test/' this page is displayed to the user. A 'Go Back' button takes the user back to the Home page.
 
 <details>
     <summary>404 Error Page</summary>  
-    <img src=".png">  
+    <img src="static/media/404.png">  
 </details>
 
 ## Future Features
 
 - **Stock Levels**: Editable stock levels are a priority future feature for LucaTaped. This will be added to the Admin Dashboard and the customer will be informed of stock levels via display labels if a product is out of stock.
 
-- **Reviews feature with Ratings**: I hope to include a Reviews feature in LucaTaped's future development. I would like the customer's to have access to real-life reviews of the products' robustness, wear and materials. I feel that for the brand it is important for transparency to be front and centre to ensure customers make the best choice in their purchases. Reviews will have their averages calculated and this will determine the products' rating out of 5 when implemented.
+- **Reviews feature with Ratings**: I hope to include a Reviews feature in LucaTaped's future development. I would like the customer's to have access to real-life reviews of the products' robustness, wear and materials. I feel that for the brand it is important for transparency to be front and centre to ensure customers make the best choice in their purchases. Reviews will have their averages calculated and this will determine the products' rating out of 10 when implemented. At the moment the reviews are manually inputed by admin.
 
 - **Newsletter Discount Code**:Discount codes obtained through newsletter subscription will offer the customer a 10% discount on their first purchase if they subscribe to the newsletter distributed via MailChimp.
 
-- **Product Slugs**: Using Django-Slugify, the future version of LucaTaped will ensure that the product's name is displayed in the URL.
+- **Blog Slugs**: Using Django-Slugify, the future version of LucaTaped will ensure that the blog posts have an auto generated slug. I had issues setting this up so at the moment the admin needs to manually enter a slug for each post.  
 
 # Technologies & Languages Used
 
@@ -525,12 +495,11 @@ If a customer navigates to a page that does not exist eg 'LucaTaped-*******.com/
 - [Git](https://git-scm.com/) used for version control.
 - [Github](https://www.github.com) used for online storage of codebase and Projects tool.
 - [VisualStudio](https://visualstudio.microsoft.com/) as IDE for development.
-- [Figma](https://www.figma.com) for project design planning and wireframe creation.
-- [Adobe Color](https://color.adobe.com) for colour theme creation and accessibility checkers.
+- [Uizard](https://www.uizard.com) for project design planning and wireframe creation.
+- [Google Chrome](https://google.com) for colour and performance accessibility checkers.
 - [Django](https://www.djangoproject.com/) was used as the Python framework for the site.
 - [Heroku](https://www.heroku.com) was used to host the 'everneed' application.
 - [WAVE](https://wave.webaim.org/) to evaluate the accessibility of the site.
-- [Procreate](https://procreate.com/) for image creation and editing.
 
 ## Libraries & Frameworks
 
@@ -540,7 +509,6 @@ Libraries and frameworks used were dictated by the 'Boutique Ado' walkthrough fr
 - [AllAuth v0.41](https://django-allauth.readthedocs.io/) for user authentication and account management.
 - [Bootstrap v4.6](https://getbootstrap.com/docs/4.6/getting-started/introduction/) for template rendering.
 - [Crispy Forms](https://pypi.org/project/crispy-bootstrap4/) for form rendering.
-- [boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html) for AWS CRUD with Python scripts.
 - [dj-database-url](https://pypi.org/project/dj-database-url/) for DATABASE_URL.
 - [django-countries](https://pypi.org/project/django-countries/) for country field rendering in checkout form.
 - [django-storages](https://django-storages.readthedocs.io/en/latest/) for handling static and media files.
@@ -549,17 +517,14 @@ Libraries and frameworks used were dictated by the 'Boutique Ado' walkthrough fr
 - [oauthlib](https://pypi.org/project/oauthlib/) OAuth request-signing logic.
 - [psycopg2](https://pypi.org/project/psycopg2/) s PostgreSQL database adapter for Python.
 - [Stripe](https://stripe.com/en-ie) for processing LucaTaped's payment system.
+- [ElephantSQl](https://customer.elephantsql.com/) for hosting the database.
+- [Cloudinary](https://cloudinary.com/) for image hosting.
 
 ## Tools & Programs
-- [ImageCompressor](https://imagecompressor.com/) for compressing PNG/WEbp files
-- [Image ReSizer](https://www.simpleimageresizer.com/) for reducing image size
-- [EZGif](<https://ezgif.com/>) for gif conversion.
-- [Convertio](https://convertio.co/) for file conversion to PNG, WEBP.
-- [Tiny Png](https://tinypng.com/) for file size reduction.
+- [Inshot](https://inshot.com/) for gif conversion.
+- [Tiny Png](https://tinypng.com/) for file size reduction and for file conversion to PNG, WEBP..
 - [Lucidchart](https://www.lucidchart.com/pages) for ERD (entity relationship diagram) creation.
 - [Favicon](https://favicon.io/) for converting an icon into a favicon.
-- [amiresponsive](https://ui.dev/amiresponsive) for screenshot of LucaTaped on different screen sizes.
-- [Perplexity AI](https://www.perplexity.ai/) for breaking down Python concepts and Django documentation into more understandable chunks.
 - [Mailchimp](https://mailchimp.com/) is used for marketing with their newsletter subscription service.
 
 # Testing
@@ -573,15 +538,15 @@ Libraries and frameworks used were dictated by the 'Boutique Ado' walkthrough fr
 A local clone of this repository can be made on GitHub. Please follow the below steps:
 
 1. Navigate to GitHub and log in.
-2. The [LucaTaped Repository](https://github.com...............) can be found at this location.
+2. The [LucaTaped Repository](https://github.com/seanorourke7/taped) can be found at this location.
 3. Above the repository file section, locate the '**Code**' button.
 4. Click on this button and choose your clone method from HTTPS, SSH or GitHub CLI, copy the URL to your clipboard by clicking the '**Copy**' button.
 5. Open your Git Bash Terminal.
 6. Change the current working directory to the location you want the cloned directory to be made.
 7. Type `git clone` and paste in the copied URL from step 4.
 8. Press '**Enter**' for the local clone to be created.
-9. Using the ``pip3 install -r requirements.txt`` command, the dependencies and libraries needed for FreeFido will be installed.
-10. Set up your **env.py** file and from the above steps for ElephantSQL, gather the Elephant SQL url for addition to your code and add your SECRET_KEY and STRIPE/AWS keys if using these services.
+9. Using the ``pip3 install -r requirements.txt`` command, the dependencies and libraries will be installed.
+10. Set up your **env.py** file and from the above steps for ElephantSQL, gather the Elephant SQL url for addition to your code and add your SECRET_KEY and STRIPE/Cloudinary keys if using these services.
 11. Ensure that your **env.py** file is placed in your **.gitignore** file and follow the remaining steps in the above Django Project Setup section before pushing your code to GitHub.
 
 ## Fork Project
@@ -589,7 +554,7 @@ A local clone of this repository can be made on GitHub. Please follow the below 
 A copy of the original repository can be made through GitHub. Please follow the below steps to fork this repository:  
 
 1. Navigate to GitHub and log in.  
-2. Once logged in, navigate to this repository using this link [LucaTaped Repository](https://github.com/............).
+2. Once logged in, navigate to this repository using this link [LucaTaped Repository](https://github.com/seanorourke7/taped).
 3. Above the repository file section and to the top, right of the page is the '**Fork**' button, click on this to make a fork of this repository.
 4. You should now have access to a forked copy of this repository in your Github account.
 5. Follow the above Django Project Steps if you wish to work on the project.
@@ -606,7 +571,8 @@ Postfolio Project 4 "I think therefore I blog" was used heavily for the blog sec
 
 ## Media
 
-- [Pexels](https://www.pexels.com/) for images used within the site
+- [Pexels](https://www.pexels.com/) for polaceholder image used within the site
+- [Instagram](https://www.instagram.com/luca_tapedoffical/) for images used within the site.
 
 <details>
 <summary>Image credits are as follows:</summary>
