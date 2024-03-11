@@ -128,6 +128,11 @@ Product images are kept clean with no backgrounds so that focus is on the produc
 *Header feedback is kept clean and intuitive*
 When the user hovers over any of the menus in the header the color changes from black to red in keeping with the style of the site. 
 
+<details open>
+    <summary>Header & Navigation Menu Demo</summary>  
+    <img src="static/media/headerdemo.gif">  
+</details>
+
 ### Color Scheme
 
 
@@ -361,260 +366,10 @@ Customers have full CRUD functionality with their prospective purchases. They ma
 | Bag | Yes, customers may add to their bag | Yes | Yes, items can be added/removed | Yes |
 | Products | Yes, Admin only | Yes, all users | Yes, Admin only | Yes, Admin only |
 | Articles | Yes, Admin only | Yes, all users | Yes, Admin only | Yes, Admin only |
+| Comments | On registration | Yes, all users | Yes, Admin only | Yes, Admin only |
 
-## Features Showcase
 
-**Header & Navigation - All Users**
-
-*For features showcase, screenshots of the features in use were taken on Laptop/*
-
-LucaTaped's navbar is kept clean, with a simple dropdown menu for the 'All Products' section. 
-- The search icon yields a search modal when clicked.
-- The bag displays the number of items within it if the customer adds an item to it.
-
-The navbar is displayed via a dropdown toggle in mobile view.
-
-<details open>
-    <summary>Header & Navigation - All Users</summary>  
-    <img src=".png">  
-</details>
-
-<details open>
-    <summary>Header & Navigation Menu Demo</summary>  
-    <img src=".gif">  
-</details>
-
-<details open>
-    <summary>Header & Navigation Mobile View</summary>  
-    <img src=".gif">  
-</details>
-
-**Home Page - All Users**
-
-The LucaTaped Home Page invites the user in with a 
-
-
-
-<details open>
-    <summary>Home Page - All Users</summary>  
-    <img src=".png">  
-</details>
-
-<details open>
-    <summary>Home Page: Bestsellers Carousel Demo</summary>  
-    <img src=".gif">  
-</details>
-
-<details>
-    <summary>Home Page: Mission Section - All Users</summary>  
-    <img src=".png">  
-</details>
-
-<details>
-    <summary>Home Page: FAQ Section - All Users</summary>  
-    <img src=".png">  
-</details>
-
-**Search - All Users**
-
-The search icon when clicked presents the user with a search modal that will take the user's input and return the relevant products. If that product is not available then the search result informs the user that there are '0' products with that name.
-
-<details open>
-    <summary>Search - All Users</summary>  
-    <img src=".png">  
-</details>
-
-**All Auth - All Users who wish to create an account**
-
-Django AllAuth provides a comprehensive, customisable authentication system that keeps user data safe. If a customer wishes to register an account they may enter their username and email and password x 2 to ensure precision. Upon submitting the form the user will receive an email to validate their email and then sign in to LucaTaped. Similar to all form fields throughout the site, I have applied my own styling to keep in line with LucaTaped's design. The log in page is similar to the register page with the log out page presenting the user with two buttons to continue the log out process or to return home.
-
-Feedback is continually released to the user through toast messages to confirm successful registration, log in and log out.
-
-AllAuth handles password reset by sending an email to the user with a link to change their password to something new.
-
-<details open>
-    <summary>Register - All Users</summary>  
-    <img src=".png">  
-</details>
-
-<details open>
-    <summary>Confirm Email - All Users</summary>  
-    <img src=".png">  
-</details>
-
-<details>
-    <summary>Log In - All Users</summary>  
-    <img src=".png">  
-</details>
-
-<details>
-    <summary>Log In Toast - Registered, Verified Users</summary>  
-    <img src=".png">  
-</details>
-
-<details>
-    <summary>Log Out - All Users</summary>  
-    <img src=".png">  
-</details>
-
-<details>
-    <summary>Password Reset - All Users</summary>  
-    <img src=".png">  
-</details>
-
-<details>
-    <summary>Password Success - All Users</summary>  
-    <img src=".png">  
-</details>
-
-**Account - Registered, logged in User**
-
-The Account page for LucaTaped is kept simple, with only relevant information and functionality. The registered, logged in user may adjust their personal, delivery address to be autofilled into their checkout form when making a purchase. Previous purchases are displayed in the Order History, displayed by most recent date.
-
-<details open>
-    <summary>Account Toast - Registered, logged-in Users</summary>  
-    <img src=".png">  
-</details>
-
-<details open>
-    <summary>Account View - Registered, logged-in Users</summary>  
-    <img src=".png">  
-</details>
-
-**All Products - All Users**
-
-LucaTaped sells a curated list of products, selected because of their 
-
-
-
-Products may be sorted according to price, A-Z, rating and category using the dropdown sort field.
-
-Admin may access the Admin Dashboard to add/edit/delete any items within the database. Crispy Forms renders the adding/editing forms. Products have the ability to display a 'Rating', at the moment it is at the discretion of the Admin to add these values based on sales. With the next version of LucaTaped, the Reviews feature will dictate the average rating for each product.
-
-No information is lost when viewing the website on mobile view. All screen sizes display the same information to give all users the same experience.
-
-<details open>
-    <summary>All Products Desktop - All Users</summary>  
-    <img src=".png">  
-</details>
-
-<details>
-    <summary>All Products Mobile - All Users</summary>  
-    <img src=".png">  
-</details>
-
-<details open>
-    <summary>Product Detail Desktop - All Users</summary>  
-    <img src=".png">  
-</details>
-
-<details>
-    <summary>Product Detail Mobile - All Users</summary>  
-    <img src=".png">  
-</details>
-
-<details>
-    <summary>Admin Product List - Logged-In, Admin only</summary>  
-    <img src=".png">  
-</details>
-
-<details>
-    <summary>Admin Add Product Form - Logged-In, Admin only</summary>  
-    <img src=".png">  
-</details>
-
-<details>
-    <summary>Admin Edit Product Form - Logged-In, Admin only</summary>  
-    <img src=".png">  
-</details>
-
-<details>
-    <summary>Admin Confirm Delete - Logged-In, Admin only</summary>  
-    <img src=".png">  
-</details>
-
-**Categories - All Users**
-
-LucaTaped keeps it's shopping experience clean and easily accessible with three categories:
-- Accessories 
-- Grip Tape
-- Merchandise
-
-'All' displays all of the products available.
-
-<details>
-    <summary>Everneed Categories - All Users</summary>  
-    <img src=".png">  
-</details>
-
-**Articles - All Users/Admin CRUD**
-
-The blog posts currently displayed on LucaTaped are informing customers of the  ..........           . The Admin has sole responsibility to add/edit/delete articles with an option for the customer/reader to comment on the post if they are logged in.
-
-The Admin may add/edit/delete articles via the Admin Dashboard. If no image is included in the form or if the image url breaks, a placeholder image is present so as not to display a broken image link. When adding an article, the Admin may choose to save the article to drafts or publish them immediately. Drafts are accessible via the django backend panel and are published by selecting the published checkbox.
-
-<details open>
-    <summary>Blog List - All Users</summary>  
-    <img src=".png">  
-</details>
-
-<details open>
-    <summary>Individual Blog View Desktop - All Users</summary>  
-    <img src=".png">  
-</details>
-
-<details>
-    <summary>Individual Blog View Mobile - All Users</summary>  
-    <img src=".png">  
-</details>
-
-<details open>
-    <summary>Blog List Edit/Delete View - Admin only, accessed via Admin Dashboard</summary>  
-    <img src=".png">  
-</details>
-
-<details>
-    <summary>Add Blog Form Mobile View - Admin only, accessed via Admin Dashboard</summary>  
-    <img src=".png">  
-</details>
-
-<details>
-    <summary>Blog Edit Form Mobile View - Admin only, accessed via Admin Dashboard</summary>  
-    <img src="docs/readme_images/art_edit_form.png">  
-</details>
-
-**Bag - All Users**
-
-LucaTaped's Shopping Bag feature is presented in a clean and clear format to correctly and quickly inform the user of their possible purchase choices. The customer has the option to change the amounts of the items that they wish to buy or to remove them completely from the bag. The customer is shown their running totals as well as their delivery charge. When products are added/updated/removed to/from the bag, then a toast message displays to give the customer feedback on their most recent choice.
-
-A clear message is shown if there are no items in the bag and a 'Keep Shopping' button redirects the user back to the 'All Products' page. A delivery threshold banner informs the customer how much more they need to spend to reach the free delivery threshold.
-
-<details open>
-    <summary>Bag Contents Desktop/Tablet - All Users</summary>  
-    <img src=".png">  
-</details>
-
-<details>
-    <summary>Bag Contents Mobile - All Users</summary>  
-    <img src=".png">  
-</details>
-
-<details>
-    <summary>Bag Toast Message displaying Bag Contents</summary>  
-    <img src=".png">  
-</details>
-
-<details open>
-    <summary>Bag Toast Delivery Threshold message - All Users</summary>  
-    <img src=".png">  
-</details>
-
-<details>
-    <summary>Bag Empty - All Users</summary>  
-    <img src=".png">  
-</details>
-
-**Checkout - All Users**
+**Checkout**
 
 The checkout process for LucaTaped is operated through the [Stripe](https://stripe.com/docs) API. As stated above -> If you wish to make a test purchase, you can use the following [Stripe Dummy Card](https://stripe.com/docs/testing) details:
 
@@ -638,17 +393,17 @@ Once the Checkout form has been submitted, a loading spinner informs the user th
 </details>
 
 <details open>
-    <summary>Checkout Desktop - All Users</summary>  
+    <summary>Checkout Desktop</summary>  
     <img src=".png">  
 </details>
 
 <details open>
-    <summary>Checkout Mobile - All Users</summary>  
+    <summary>Checkout Mobile</summary>  
     <img src=".png">  
 </details>
 
 <details>
-    <summary>Checkout Stripe Form - All Users</summary>  
+    <summary>Checkout Stripe Form</summary>  
     <img src=".png">  
 </details>
 
