@@ -35,7 +35,6 @@ Access to Admin to add products from the frontend with relevant sign-in credenti
     - [Typography \& Iconography](#typography--iconography)
 - [Project Planning](#project-planning)
   - [Strategy Plane](#strategy-plane)
-    - [Carbon Footprint Planning](#carbon-footprint-planning)
     - [Site Goals](#site-goals)
   - [Agile Methodologies](#agile-methodologies)
     - [MoSCoW Prioritization](#moscow-prioritization)
@@ -56,28 +55,15 @@ Access to Admin to add products from the frontend with relevant sign-in credenti
 - [Features](#features)
   - [User View - Guests/Account Holders](#user-view---guestsaccount-holders)
   - [CRUD Functionality](#crud-functionality)
-  - [Features Showcase](#features-showcase)
   - [Future Features](#future-features)
 - [Technologies \& Languages Used](#technologies--languages-used)
   - [Libraries \& Frameworks](#libraries--frameworks)
   - [Tools \& Programs](#tools--programs)
 - [Testing](#testing)
 - [Deployment](#deployment)
-  - [Connecting to GitHub](#connecting-to-github)
-  - [Django Project SetUp](#django-project-setup)
-    - [Elephant SQL](#elephant-sql)
-  - [Heroku Deployment](#heroku-deployment)
-  - [Google Mail Setup](#google-mail-setup)
-  - [AWS Config](#aws-config)
-    - [Media Folder Setup](#media-folder-setup)
-    - [Django AWS Connect](#django-aws-connect)
-  - [Stripe Config](#stripe-config)
   - [Clone Project](#clone-project)
   - [Fork Project](#fork-project)
 - [Credits](#credits)
-  - [Code](#code)
-  - [Media](#media)
-    - [Additional reading/tutorials/books/blogs](#additional-readingtutorialsbooksblogs)
   - [Acknowledgements](#acknowledgements)
 
 ## Overview
@@ -173,7 +159,7 @@ If a customer chooses to make a purchase then they are given consistent feedback
 
 ## Agile Methodologies
 
-LucaTaped followed Agile planning methodologies to its completion. [GitHub Projects]() provided an ideal platform to create issues, boards and milestones for each of the project's Epics. Using labels I could easily identify my next task and organise them into the appropriate Milestones and Sprints. Keeping focused on individual sections as I built LucaTaped reduced the number of bugs and human errors.
+LucaTaped followed Agile planning methodologies to its completion. [GitHub Projects](https://github.com/users/seanorourke7/projects/9) provided an ideal platform to create issues, boards and milestones for each of the project's Epics. Using labels I could easily identify my next task and organise them into the appropriate Milestones and Sprints. Keeping focused on individual sections as I built LucaTaped reduced the number of bugs and human errors.
 
 ### MoSCoW Prioritization
 
@@ -186,7 +172,7 @@ I chose to follow the MoSCoW Prioritization method for LucaTaped, identifying an
 
 ### Sprints
 
-My Sprints were broken down into appropriately sized chunks from the beginning and I followed them to the best of my abilities.
+Sprints were broken down into appropriately sized chunks.
 
 | Sprint No. | Sprint Content | 
 |------------|----------------|
@@ -213,7 +199,7 @@ In addition to this, sitemap.xml and robots.txt files are included to increase t
 
 ## User Stories
 
-User stories and features were recorded and managed on [GitHub Projects]()
+User stories and features were recorded and managed on [GitHub Projects](https://github.com/users/seanorourke7/projects/9)
 
 ### Visitor User Stories
 
@@ -230,9 +216,8 @@ User stories and features were recorded and managed on [GitHub Projects]()
 | As a **customer** I can **create and manage an account with LucaTaped** so that I can **keep my personal details, order history and speed up my checkout process**. | **MUST HAVE** |
 | As a **customer**, I can **edit my personal details on my account** so that I can **keep them up to date**. | **MUST HAVE** |
 | As a **site user**, I can **enter my login details** so that I can **login in to my account**. | **MUST HAVE** |
-| As a **site user**, I can **click on the visible links in the footer** so that I can **view the relevant information and destinations**. | **MUST HAVE** |
-| As a **site user**, I can **register my email and receive a validation link via email** so that I can **create an account with everneed to track my spending and purchases**. | **SHOULD HAVE** |
-| As a **customer**, I can **use the Contact Us form** so I can **send a message to the business/site admin**. | **SHOULD HAVE** |
+| As a **site user**, I can **click on the links in the footer** so that I can **view the relevant information and destinations**. | **MUST HAVE** |
+| As a **site user**, I can **register** so that I can **create an account with lucataped to track my spending and purchases**. | **SHOULD HAVE** |
 
 ### Epic - Products
 
@@ -281,7 +266,7 @@ Essential features were:
 - User Accounts with AllAuth
 - Payment system with Stripe
 - Articles creation and management - Full CRUD
-- Comments creation and management - Full CRUD
+- Comments creation and management - Full CRUD for admin, partial for registered User. 
 - Product inventory management - Full CRUD
 - Shopping UX with Bag and Checkout processes - Full CRUD
 - Site responsivity
@@ -505,7 +490,7 @@ If a customer navigates to a page that does not exist eg 'LucaTaped-*******.com/
 - [Uizard](https://www.uizard.com) for project design planning and wireframe creation.
 - [Google Chrome](https://google.com) for colour and performance accessibility checkers.
 - [Django](https://www.djangoproject.com/) was used as the Python framework for the site.
-- [Heroku](https://www.heroku.com) was used to host the 'everneed' application.
+- [Heroku](https://www.heroku.com) was used to host the 'lucataped' application.
 - [WAVE](https://wave.webaim.org/) to evaluate the accessibility of the site.
 
 ## Libraries & Frameworks
