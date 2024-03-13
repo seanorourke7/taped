@@ -17,8 +17,7 @@
         {% else %}
         <img class="blog_image"
           src=" {{ post.featured_image.url }}"
-          alt="image uploaded by the post author"
-        />
+          alt="image uploaded by the post author">
         {% endif %}
       </div>
     </div>
@@ -38,7 +37,6 @@
 
         <div>
           <div >
-            <strong>
               {% if user.is_authenticated %}
               <form
                 class="d-inline"
@@ -69,7 +67,6 @@
               <span class="text-secondary"><i class="far-fa-heart"></i></span>
               {% endif %}
               <span class="text-secondary"> {{post.number_of_likes}} </span>
-            </strong>
             <strong class="text-secondary"
               ><i class="far fa-heart"></i> {{post.number_of_likes}}
             </strong>
@@ -89,21 +86,19 @@
   <div>
     {% if user.is_superuser %}
     <span>
-      <a href="{% url 'delete_post' post.slug %}">
-        <button class="btn btn-black rounded-0 text-uppercase float-left post_edit">Delete Post</button>
-      </a>
+      <a href="{% url 'delete_post' post.slug %}" class="btn btn-black rounded-0 text-uppercase float-left post_edit">Delete Post</a>
     </span>
     <div></div>
     <span>
-      <a href="{% url 'edit_post' post.slug %}"><button class="btn btn-black rounded-0 text-uppercase float-left post_edit">Edit
-          Post</button>
-      </a>
+      <a href="{% url 'edit_post' post.slug %}" class="btn btn-black rounded-0 text-uppercase float-left post_edit">Edit
+          Post
+        </a>
     </span>
     {% endif %}
     <br>
     <div class="row">
       <div class="col">
-        <hr />
+        <hr>
       </div>
     </div>
     <div class="row">
