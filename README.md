@@ -46,7 +46,6 @@ Access to Admin to add products from the frontend with relevant sign-in credenti
     - [Epic - Home View \& User Account](#epic---home-view--user-account)
     - [Epic - Products](#epic---products)
     - [Epic - Basket Management \& Purchasing](#epic---basket-management--purchasing)
-    - [Epic - Wishlist](#epic---wishlist)
     - [Epic - Newsletter](#epic---newsletter)
   - [Scope Plane](#scope-plane)
   - [Structural Plane](#structural-plane)
