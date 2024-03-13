@@ -125,6 +125,7 @@ class DeletePost(View):
 class EditPost(UpdateView):
     model = Post
     template_name = 'edit_post.html'
-    fields = ['title', 'content', 'featured_image', 'status']
-    success_url = reverse_lazy('home')
+    fields = ['title', 'content','location', 'equiptment_featured', 'featured_image', 'status']
+    success_url = reverse_lazy('home') 
+    
     

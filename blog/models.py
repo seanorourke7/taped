@@ -15,6 +15,8 @@ class Post(models.Model):
     excerpt = models.TextField(blank=True)
     updated_on = models.DateTimeField(auto_now=True)
     content = models.TextField(null=False, blank=False)
+    location = models.TextField(default='SkatePark', null=False, blank=False)
+    equiptment_featured = models.TextField(default='StuntScooter', null=False, blank=False)
     created_on = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0)
     likes = models.ManyToManyField(
