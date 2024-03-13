@@ -26,13 +26,13 @@ class StripeWH_Handler:
         body = render_to_string(
             'checkout/confirmation_emails/confirmation_email_body.txt',
             {'order': order, 'contact_email': settings.DEFAULT_FROM_EMAIL})
-        
+
         send_mail(
             subject,
             body,
             settings.DEFAULT_FROM_EMAIL,
             [cust_email]
-        )        
+        )
 
     def handle_event(self, event):
         """
@@ -60,11 +60,12 @@ class StripeWH_Handler:
             if value == "":
                 shipping_details.address[field] = None
 
-        # update info if save_info was checked      
+        # update info if save_info was checked
         profile = None
         username = intent.metadata.username
         if username != 'AnonymousUser':
-            profile.default_profile = UserProfile.objects.get(user__username=username)
+            profile.default_profile = UserProfile.objects.get(
+                    user__username=username)
             if save_info:
                 profile.default_phone_number = shipping_details.phone
                 profile.default_country = shipping_details.address.country
@@ -72,8 +73,8 @@ class StripeWH_Handler:
                 profile.default_town_or_city = shipping_details.address.city
                 profile.default_street_address1 = shipping_details.address.line1
                 profile.default_street_address2 = shipping_details.address.line2
-                profile.profile.default_county = shipping_details.address.state    
-                profile.save()   
+                profile.profile.default_county = shipping_details.address.state
+                profile.save()
 
         order_exists = False
         attempt = 1
@@ -130,7 +131,8 @@ class StripeWH_Handler:
                         )
                         order_line_item.save()
                     else:
-                        for size, quantity in item_data['items_by_size'].items():
+                        for size, quantity in item_data[
+                                'items_by_size'].items():
                             order_line_item = OrderLineItem(
                                 order=order,
                                 product=product,

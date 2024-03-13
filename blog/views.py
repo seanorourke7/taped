@@ -100,13 +100,12 @@ class PostCreate(View):
             instance = form.save(commit=False)
             instance.author = request.user
             instance.save()
-        if instance.status == 1:
-            messages.info(request, f'Created and published new post')
-        else:
-            messages.info(request, f'New post created as draft only. ')
+            if instance.status == 1:
+                messages.info(request, f'Created and published new post')
+            else:
+                messages.info(request, f'New post created as draft only. ')
             return HttpResponseRedirect(reverse('home'))
         return render(request, 'postcreate.html', {'form': form})
-
 
 # view for deleting posts by the user
 
@@ -125,7 +124,5 @@ class DeletePost(View):
 class EditPost(UpdateView):
     model = Post
     template_name = 'edit_post.html'
-    fields = ['title', 'content','location', 'equiptment_featured', 'featured_image', 'status']
-    success_url = reverse_lazy('home') 
-    
-    
+    fields = ['title', 'content', 'location', 'equiptment_featured', 'featured_image', 'status']
+    success_url = reverse_lazy('home')
