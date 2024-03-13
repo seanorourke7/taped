@@ -104,13 +104,17 @@ LucaTaped is accessible via all browsers with full responsiveness on different s
 
 ## Customer Goals
 
-Customers are provided with an easy, intuitive shopping experience and are encouraged to avail of relevant scooter accessories and merchandise. There is also a blog that is regularly updated to keep the users coming back and it is hoped that customers will sign up/register an account to be able to avail of the full range of user features. A sense of community is created with the ability to comment on blog posts as well as a weekly newsletter which will inform the customers of new products, trends and articles on lucataped.
+Customers are provided with an interesting site that has an intuitive shopping experience and are encouraged to avail of relevant accessories and merchandise. There is also a blog that is regularly updated to keep the users coming back and it is hoped that customers will sign up/register an account to be able to avail of the full range of user features. A sense of community is created with the ability to comment on blog posts as well as a weekly newsletter which will inform the customers of new products, trends and articles on lucataped.
 
 ## Business Goals
 
-LucaTaped provides easy Admin functionality for the business owner with an accessible, easy-use Admin access to manage inventory. The additional frontend forms allows the business owner to make quick and easy changes, Add/Edit/Delete Products and publish new articles to the blog. 
+LucaTaped seeks to build a strong base of regular shoppers who seek quality products relevant to their interests. The newsletter and blog posts are designed to showcase the constant inprovement Luca in making in his skills and to showcase new products available for sale. Further marketing is made through the businesses social media channels, in particular the Facebook, Instagram, and Tiktok page.
 
-LucaTaped seeks to build a strong base of regular shoppers who seek quality products relevant to their interests. The newsletter and articles are designed to showcase the constant inprovement Luca in making in his skills and to showcase new products available for sale. Further marketing is made through the businesses social media channels, in particular the Facebook and Instagram page.
+The idea is to bring Luca more engagement from his fans and build a community that will purchase form the brand and build brand loyalty through regular blog posts and social media updates which will all funnel potential customers to the store by linking to the site at every opportunity. 
+
+Once on the site the customer will have all the content that features on the socials so will be more likely to stay on the site longer. This will encourage interaction and ultimatley lead to customers making a purchase.  
+
+LucaTaped provides easy Admin functionality for the business owner with an accessible, easy-use Admin access to manage inventory. The additional frontend forms allows the business owner to make quick and easy changes, Add/Edit/Delete Products and publish new articles to the blog. 
 
 # UX/UI - User Experience/User Interface
 
