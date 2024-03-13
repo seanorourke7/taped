@@ -304,8 +304,8 @@ Form validation has been left with it's original styling as no change was needed
 ![LucaTaped Ecommerce ERC]()  
 *Database Schema (ERD) for LucaTaped displaying relationships between feature components saved within the database*
 
-[Lucidchart](https://www.lucidchart.com/pages/) was used to create the ERD(Entity Relationship Diagram) for LucaTaped. To satisfy the assessment criteria, multiple models were created to personalise the LucaTaped project. These include:
-- **Articles**: Articles may be added by Admin with image and text fields within the Add/Edit Article forms.
+[Microsoft Excel](microsoft.com) was used to create the ERD(Entity Relationship Diagram) for LucaTaped. To satisfy the assessment criteria, multiple models were created to personalise the LucaTaped project. These include:
+- **Blog Posts**: Articles may be added by Admin with image and text fields within the Add/Edit post forms.
 - **Comments**: Comments may be added by registered users on blog posts.
 - **Product**: I used the Boutique Ado Product model as a template for the products and added the option for items to be on sale and for items to be customised. 
 
