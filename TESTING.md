@@ -70,7 +70,7 @@ All HTML pages were validated and received a 'No errors or warning to show' for 
 
 
 
-There were several Errors/Warnings present as a result of Bootstraps form elements, not from the code that I have created. Issues with the name ID duplicates and issues with the `<strong>` and `<p>` tags are embedded within the Bootstrap forms and are inaccessible to me without breaking my code up and reconfiguring the code.
+There were several Errors/Warnings present as a result of Bootstraps form elements, not from the code that I have created. Issues with the name ID duplicates and issues with the `<strong>` and `<p>` tags are embedded within the Bootstrap forms and are inaccessible to me.
 
 There are also issues with the iFrame in the post detail but this is from the tiktok videos loaded through django so again I can't access this code. 
 All errors associated with code i've written has been fixed.
@@ -123,20 +123,20 @@ Testing was carried out on desktop using a Chrome browser to ensure all forms ta
 | Forgot Password            | Yes      | Text Input/Click Links | Form field highlight/Toast message | Pass | N/A |
 | Log In Page                | Yes      | Text Input/Click Links | Form field highlight/Toast message | Pass | N/A |
 | Log Out Page               | Yes      | Click Links bring user to correct destination | Button animation/Toast message | Pass | N/A |
-| Account - Edit Address     | Yes      | Text Input/Click to Save | Form field highlighted/Toast message | Pass | N/A |
+| Account - Edit info        | Yes      | Text Input/Click to Save | Form field highlighted/Toast message | Pass | N/A |
 | Search                     | Yes      | Text Input/Click to Search | Form field highlighted Placeholder "Search our Site" | Pass | N/A |
 | Newsletter Sign Up         | Yes      | Text Input/ Click to Subscribe | Button animation/New tab subscription confirmation | Pass | N/A |
 | Products                   | Yes      | Click product brings user to product description | Pointer change on hover of products | Pass | N/A |
 | Add Product                | Yes      | Navigated to Admin "Product Management", clicked 'Add Product', Completed form, Form submits correctly to display the product. | Form field highlight/Button animation/Toast message, "Successfully added product!". | Pass | N/A |
 | Delete Product             | Yes      | Navigated to a Product, clicked 'Delete Product'.| Toast message, "Product Deleted!". | Pass | N/A |
 | Edit Product               | Yes      | Navigated to a Product clicked 'Edit Product', Completed form, Form submits correctly to display the edited product. | Form field highlight/Button animation/Toast message, "product updated sucessfully". | Pass | N/a |
-| View Post                  | Yes      | Click link for article | Article card border change on hover | Pass | N/A |
-| Add Post                   | Yes      | Navigated to Admin Dashboard, clicked 'Create a Post', Completed form, Form submits correctly to display the Post. | Form field highlight/Button animation/Toast message, If published "Created and published new post" otherwise "New post created as draft only.". | Pass | N/A |
+| View Post                  | Yes      | Click link for article | Pointer change on hover | Pass | N/A |
+| Create a Post              | Yes      | Navigated to Admin Dashboard, clicked 'Create a Post', Completed form, Form submits correctly to display the Post. | Form field highlight/Button animation/Toast message, If published "Created and published new post" otherwise "New post created as draft only.". | Pass | N/A |
 | Edit Post                  | Yes      | Navigated to a Post Detail Page, clicked 'Edit Post', Completed form, Form submits correctly to display the edited article. | Form field highlight/Button animation/Toast message, Post edited successfully. | Pass | N/A |
 | Product Quantity           | Yes      | Click increment/decrement | Colour change on hover/product quantity successfully changed | Pass | N/A |
 | Product Sizes              | Yes      | Click dropdown/Click to select | Form field highlight/Size highlight | Pass | N/A |
 | Checkout                   | Yes      | Click 'Secure Checkout', correct products in bag, entered delivery and payment details, submitted form to process payment. | Form field highlight/Button animation/Toast message, Loading spinner when processing order, order processed saved to account and email sent. | Pass | N/A |
-| Footer                     | Yes      | Click Link brings user to social media sites, privacy policy and mailchimp sign up | Font colour change on hover | Pass | N/A |
+| Footer                     | Yes      | Click Link brings user to social media sites, privacy policy and mailchimp sign up | Pointer change on hover | Pass | N/A |
 
 ### Browser Compatibility
 
@@ -196,9 +196,9 @@ Responsiveness testing was carried out using Google Dev Tools and on real world 
 ## Bugs
 
 | No. | Bug | Solved | Fix | Solution Credit |
-| --- | ---------------- | ---- | ------------- | -------------- | ------------|
+| --- | --- | ------ | --- | --------------- |
 | 1   | Emails not sending | No | Still working on a solution may be due to google settings change. May need to change provider | Still working on it. |
-| 2   | Slug not auto generting on new blog posts. | Yes | Couldn't get the slugify to auto generate a slug so I have left the slugfield open to the admin so they can set a unique slufg when generating the post as a temporary fix. There are instructions for the admin as a placeholder | Myself, stil working on a permanent solution | 
+| 2   | Slug not auto generting on new blog posts. | Yes | Couldn't get the slugify to auto generate a slug so I have left the slugfield open to the admin so they can set a unique sluf when generating the post as a temporary fix. There are instructions for the admin as a placeholder and the input field has been renamed URL | Myself, still working on a permanent solution | 
 | 3  | Country drop down option from django not working with stripe form | Yes | I changed the model to have the counties of Ireland as a dropdown and to use eircode instead of postcode but this had an impact on using the django countries dropdown code. As a solution I didn't use the django countries and instead set the placeholder of country to IE. The store is designed to only deliver to ireland at the moment hence the eircode and county dropdown menus. | Fixed by me |
 
 ### Unresolved/Known Bugs
