@@ -9,7 +9,7 @@ STATUS = ((0, "Draft"), (1, "Published"))
 class Post(models.Model):
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(
-        max_length=200, null=True, blank=True, unique=True, default='Must be unique for URL with no spaces. (match to title)'
+        verbose_name="URL", max_length=200, null=True, blank=True, unique=True, default='Must be unique for URL with no spaces. (match to title)'
         )
     featured_image = CloudinaryField('image', default='placeholder')
     excerpt = models.TextField(blank=True)

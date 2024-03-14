@@ -301,7 +301,7 @@ Form validation has been left with it's original styling as no change was needed
 
 ### Database Schema
 
-![LucaTaped Ecommerce ERC]()  
+![LucaTaped Ecommerce ERC](static/media/database.png)  
 *Database Schema (ERD) for LucaTaped displaying relationships between feature components saved within the database*
 
 [Microsoft Excel](microsoft.com) was used to create the ERD(Entity Relationship Diagram) for LucaTaped. To satisfy the assessment criteria, multiple models were created to personalise the LucaTaped project. These include:

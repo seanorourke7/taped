@@ -183,6 +183,7 @@ footer {
 
  }
 .socials {
+    padding: 0;
     color: #000;
     text-align: center;
     background-color: #cec9c0bd;
