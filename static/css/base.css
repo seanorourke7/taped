@@ -418,3 +418,7 @@ a {
 .dropdown-item:hover{
     color:red
 }
+
+.footer-form {
+    font-size: 1rem;
+}
