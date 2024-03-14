@@ -311,8 +311,6 @@ Form validation has been left with it's original styling as no change was needed
     <img src="static/media/productmodel.png">  
 </details>
 
-Future Feature models are visible in the ERD for Reviews and Discount Codes. These will be incorporated into the next version of LucaTaped. At the moment they are beyond the MVP.
-
 ### Defensive Design
 
 LucaTaped was developed to ensure a reliable user experience. It's intention was to cause no frustrations for the users and to ensure they return to make further purchases.
@@ -337,24 +335,24 @@ CSRF (Cross-Site Request Forgery) tokens are included in every form to help auth
 | Home Page | Visible           | Visible         |
 | My Account  | Visible - Offers option to login or register | Visible and full feature interaction available |
 | All Products  | Visible - items can be viewed and added to Bag, | Visible and full feature interaction available |
-| Categories   | Visible - items can be viewed and added to Bag,  | Visible and full feature interaction available |
+| Categories   | Visible - items can be viewed and added to Bag,  | Visible - items can be viewed and added to Bag, |
 | Blog   | Visible | Visible |
-| Add Comment   | Not Visible | Only visible to registered users |
+| Add Comment   | Not Visible | Visible to registered users |
 | Search  | Visible | Visible |
 | Newsletter | Visible | Visible |
-| Product Management | Not Visible | Only visible to Admin |
-| Create a Post | Not Visible | Only visible to Admin |
+| Product Management | Not Visible | Only visible to Admin/SuperUser |
+| Create a Post | Not Visible | Only visible to Admin/SuperUser |
 
 ## CRUD Functionality
 
-Customers have full CRUD functionality with their prospective purchases. They may edit their bag, add more items or remove all items. They may also edit their delivery details if they are registered, logged-in users. LucaTaped Admin have access to the Admin Dashboard which allow them full CRUD over Product Management and Article posting.
+Customers have full CRUD functionality with their prospective purchases. They may edit their bag, add more items or remove items. They may also edit their delivery details, email, favourite skate park and interests if they are registered, logged-in users. LucaTaped Admin have access to the front end Admin Dashboard which allow them full CRUD over Product Management and Article posting.
 
 | Feature | Create | Read | Update | Delete |
 |---------|--------|------|--------|--------|
-| Account | On registration | Yes, delivery details and order history | Yes, update address | No, users are unable to delete their accounts, this is restricted to Admin |
+| Account | On registration | Yes, delivery details, favourite skate park, interests and order history | Yes | No, users are unable to delete their accounts, this is restricted to Admin |
 | Bag | Yes, customers may add to their bag | Yes | Yes, items can be added/removed | Yes |
 | Products | Yes, Admin only | Yes, all users | Yes, Admin only | Yes, Admin only |
-| Articles | Yes, Admin only | Yes, all users | Yes, Admin only | Yes, Admin only |
+| Blog Posts | Yes, Admin only | Yes, all users | Yes, Admin only | Yes, Admin only |
 | Comments | On registration | Yes, all users | Yes, Admin only | Yes, Admin only |
 
 
@@ -386,21 +384,22 @@ Once the Checkout form has been submitted, a loading spinner informs the user th
     <img src="static/media/checkoutform.png">  
 </details>
 
-<details>
+<details open>
     <summary>Checkout Success</summary>  
     <img src="static/media/checkoutsuccess.png">  
 </details>
 
-A confirmation email for the order is emailed to all customers. This details their spending amount and the date of their purchase. Their totals and items purchased are also visible in the checkout success page upon successful payment processing. If the user is logged in, they can view this order and all previous orders.
+A confirmation email for the order should be emailed to all customers but isn't working yet, As detailed in the testing file i'm having issues getting the emails up and running since google changed their settings. This would detail their spending amount and the date of their purchase. 
+Their totals and items purchased are also visible in the checkout success page upon successful payment processing. If the user is logged in, they can view this order and all previous orders.
 
-<details>
+<details open>
     <summary>Order History - All Users who've made a purchase with a registered, logged-in account</summary>  
     <img src="static/media/checkoutorders.png">  
 </details>
 
 **Admin Dashboard - Logged in Admin/Superuser only**
 
-When developing this project it was important to me to have a separate Admin area accessible via the frontend, in addition to the Django Backend Panel. I fulfilled this by separating out the CRUD features for the Admin/Superuser into an Admin Dashboard. This provides a direct link to editable forms for adding/editing products and articles. A separated 'Admin' view (viewable only to the Admin when they are logged in) has been created for Blog Posts and Products with lists that display 'Edit' and 'Delete' Buttons. The 'Create a Post' button brings the Admin directly to adding a new blog post. The 'Product Management' button brings the Admin directly to adding a new product. Crispy Forms and Summernote render forms that allow for a high degree of editing, manipulation and connection to the database models.
+When developing this project it was important to me to have a separate Admin area accessible via the frontend, in addition to the Django Backend Panel. I fulfilled this by separating out the CRUD features for the Admin/Superuser into "Product Management" and "Create a Post". This provides a direct link to editable forms for adding/editing products and articles. A separated 'Admin' view (viewable only to the Admin when they are logged in) has been created for Blog Posts and Products with lists that display 'Edit' and 'Delete' Buttons. The 'Create a Post' button brings the Admin directly to adding a new blog post. The 'Product Management' button brings the Admin directly to adding a new product. Crispy Forms and Summernote render forms that allow for a high degree of editing, manipulation and connection to the database models.
 
 <details open>
     <summary>Admin Dashboard View - Admin Only</summary>  
@@ -446,12 +445,7 @@ The Privacy Policy opens in a new tab thanks to [Termly's](https://termly.io/) p
 
 LucaTaped customers are invited to subscribe to LucaTaped's weekly newsletter. This form is located in the footer. The newsletter service is offered through Mailchimp. The newsletter aims to keep customers informed of discounts, new products, sales and new blog entries on a weekly basis. On entering their email and clicking subscribe, the user is brought to a new page in a new tab confirming their subscription to LucaTaped. They may unsubscribe from here or from the bottom of the weekly newsletter.  
 
-<details>
-    <summary>MailChimp Newsletter Sign Up Confirmation</summary>  
-    <img src=".png">  
-</details>
-
-<details>
+<details open>
     <summary>MailChimp Newsletter Example</summary>  
     <img src="static/media/mailchimpsignup.png">  
 </details>
@@ -460,14 +454,14 @@ LucaTaped customers are invited to subscribe to LucaTaped's weekly newsletter. T
 
 If a customer navigates to a page that does not exist eg 'LucaTaped-*******.com/test/' this page is displayed to the user. A 'Go Back' button takes the user back to the Home page.
 
-<details>
+<details open>
     <summary>404 Error Page</summary>  
     <img src="static/media/404.png">  
 </details>
 
 ## Future Features
 
-- **Stock Levels**: Editable stock levels are a priority future feature for LucaTaped. This will be added to the Admin Dashboard and the customer will be informed of stock levels via display labels if a product is out of stock.
+- **Stock Levels**: Editable stock levels are a priority future feature for LucaTaped. This will be added to Product Management and the customer will be informed of stock levels via display labels if a product is out of stock.
 
 - **Reviews feature with Ratings**: I hope to include a Reviews feature in LucaTaped's future development. I would like the customer's to have access to real-life reviews of the products' robustness, wear and materials. I feel that for the brand it is important for transparency to be front and centre to ensure customers make the best choice in their purchases. Reviews will have their averages calculated and this will determine the products' rating out of 10 when implemented. At the moment the reviews are manually inputed by admin.
 
@@ -514,7 +508,9 @@ Libraries and frameworks used were dictated by the 'Boutique Ado' walkthrough fr
 - [Tiny Png](https://tinypng.com/) for file size reduction and for file conversion to PNG, WEBP..
 - [Lucidchart](https://www.lucidchart.com/pages) for ERD (entity relationship diagram) creation.
 - [Favicon](https://favicon.io/) for converting an icon into a favicon.
+- [Microsoft Excel](https://office365.com/) for creating the database schema.
 - [Mailchimp](https://mailchimp.com/) is used for marketing with their newsletter subscription service.
+
 
 # Testing
 
@@ -563,11 +559,8 @@ Postfolio Project 4 "I think therefore I blog" was used heavily for the blog sec
 - [Pexels](https://www.pexels.com/) for placeholder image used within the site
 - [Instagram](https://www.instagram.com/luca_tapedoffical/) for images used within the site.
 
-<details>
-<summary>Image credits are as follows:</summary>
-
 ## Acknowledgements
 
-- A huge thanks to my wife for their continued support during this project and Diploma. 
-- Much gratitude is extended to my mentor Graeme Taylor  for his expert guidance and advice during this Diploma, which gave me the confidence to make the most out of every project.
-- Thank you to my fellow students and Code Institute alumni for their guidance and support.
+- A huge thanks to my wife for her continued support during this project and Diploma. 
+- Much gratitude is extended to my mentor Graeme Taylor  for his expert guidance and advice during this Diploma.
+- Thank you to my fellow students and facilitators.
