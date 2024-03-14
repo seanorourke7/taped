@@ -42,6 +42,8 @@ class UserProfile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     default_name = models.CharField(max_length=50, null=True, blank=True)
     default_email = models.EmailField(max_length=250, null=True, blank=True)
+    default_favourite_skate_park = models.CharField(max_length=50, null=True, blank=True)
+    default_interets = models.CharField(max_length=50, null=True, blank=True)
     default_phone_number = models.CharField(
         max_length=20, null=True, blank=True)
     default_eircode = models.CharField(max_length=20, null=True, blank=True)

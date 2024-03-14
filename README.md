@@ -9,7 +9,6 @@ View live site: [LucaTaped](https://taped-8201a532e6b6.herokuapp.com/)
 If you wish to make a test purchase, you can use the following [Stripe Dummy Card](https://stripe.com/docs/testing) details:
 
 - Success Card Number: 4242424242424242
-- 3D Secure Auth Number: 4000 0027 6000 3184
 - Exp Date: Any date in the future using the format MM/YY
 - CVN: any 3 digit number
 - Postcode: any 5 numerals  
@@ -23,7 +22,7 @@ Access to Admin to add products from the frontend with relevant sign-in credenti
 ## Table of Contents
 
 - [LucaTaped](#lucataped)
-  - [Introduction](#introduction)
+  - [Introduction](#overview)
   - [Introduction](#site-responsivness)
   - [Table of Contents](#table-of-contents)
   - [Overview](#overview)
@@ -97,9 +96,11 @@ LucaTaped seeks to build a strong base of regular shoppers who seek quality prod
 
 The idea is to bring Luca more engagement from his fans and build a community that will purchase form the brand and build brand loyalty through regular blog posts and social media updates which will all funnel potential customers to the store by linking to the site at every opportunity. 
 
-Once on the site the customer will have all the content that features on the socials so will be more likely to stay on the site longer. This will encourage interaction and ultimatley lead to customers making a purchase.  
+There are sponsorship opportunities as each post has a "Location" and "Equiptment Used" model field for highlighting skateparks and equiptment that may have been sponsered. 
 
-LucaTaped provides easy Admin functionality for the business owner with an accessible, easy-use Admin access to manage inventory. The additional frontend forms allows the business owner to make quick and easy changes, Add/Edit/Delete Products and publish new articles to the blog. 
+Once on the site the customer will have similar content to that on the socials so will be more likely to stay on the site longer. This will encourage interaction and ultimatley lead to customers making a purchase.  
+
+LucaTaped provides easy Admin functionality for the business owner with an accessible, easy-use Admin access to manage inventory. The additional frontend forms allows the business owner to make quick and easy changes, Add/Edit/Delete Products, mark Products as on sale and publish new articles to the blog. 
 
 # UX/UI - User Experience/User Interface
 
@@ -132,7 +133,7 @@ The color scheme is based on the red and black logo. Simple but sharp and immedi
 
 ### Typography & Iconography
 
-![LucaTaped Font](https://fonts.google.com/specimen/Russo+One?query=Russo+One/)
+[LucaTaped Font](https://fonts.google.com/specimen/Russo+One?query=Russo+One/)
 *LucaTaped Font*
 
 The Font is Russo One from google fonts. This is chosen as it is a strong font that gives the site a cooler appearance to the target audience. 
@@ -146,7 +147,7 @@ The primary objective was to create an e-commerce store that satisfied the asses
 
 The site's design is based around Luca's realworld Instagram content. Images were edited for the website to be cohesive. Bootstrap and Crispy Forms were used for the project's frontend to speed up the process and to keep the templates consistent. Further customisation to the buttons, forms, modals, toasts and user feedback processes were added to the project's CSS files. 
 
-If a customer chooses to make a purchase then they are given consistent feedback through the use of 'toasts' messages and confirmation emails. The purchasing process is presented using Stripe payment handlers, obtained and setup using [Stripe's](https://stripe.com/docs) documentation and website.
+If a customer chooses to make a purchase then they are given consistent feedback through the use of 'toasts' messages. The purchasing process is presented using Stripe payment handlers, obtained and setup using [Stripe's](https://stripe.com/docs) documentation and website.
 
 ### Site Goals
 
@@ -159,7 +160,7 @@ If a customer chooses to make a purchase then they are given consistent feedback
 
 ## Agile Methodologies
 
-LucaTaped followed Agile planning methodologies to its completion. [GitHub Projects](https://github.com/users/seanorourke7/projects/9) provided an ideal platform to create issues, boards and milestones for each of the project's Epics. Using labels I could easily identify my next task and organise them into the appropriate Milestones and Sprints. Keeping focused on individual sections as I built LucaTaped reduced the number of bugs and human errors.
+LucaTaped followed Agile planning methodologies to its completion. [GitHub Projects](https://github.com/users/seanorourke7/projects/9) provided an ideal platform to create issues, boards and milestones for each of the project's Epics. Using labels I could easily identify my next task and organise them into the appropriate Sprints. Keeping focused on individual sections as I built LucaTaped reduced the number of bugs and human errors.
 
 ### MoSCoW Prioritization
 
@@ -188,7 +189,7 @@ Sprints were broken down into appropriately sized chunks.
 
 ## Marketing
 
-An [LucaTaped Facebook Page](https://www.facebook.com/people/LucaTaped/61557013865668/) was created to demonstrate promotion of the LucaTaped store on social media. Posts informing customers of deals and new products would be made on the page with the hopes of drawing in more revenue. Facebook provides an easy, minimal-step process to allow business owners to promote their business, with additional paid 'boost' features to further promote and spread the reach of the posts. LucaTaped also offers a newsletter subscription service through MailChimp. 
+A [LucaTaped Facebook Page](https://www.facebook.com/people/LucaTaped/61557013865668/) was created to demonstrate promotion of the LucaTaped store on social media. Posts informing customers of deals and new products would be made on the page with the hopes of drawing in more revenue. Facebook provides an easy, minimal-step process to allow business owners to promote their business, with additional paid 'boost' features to further promote and spread the reach of the posts. LucaTaped also offers a newsletter subscription service through MailChimp. 
 
 Within the head's meta tags of the base template are researched keywords and a description of LucaTaped's goal as a business. These keywords have been researched to ensure that both short-tail and long-tail keywords are included. Keywords such as 'scooter', 'stunts' and 'skatepark' aim to reach most of the market, with additional descriptive key phrases such as 'buy scooter accessories' and 'buy grip tape' to draw in users who know exactly what type of product they are looking for. Important keywords like 'Grip Tape' and 'Scooter' are present in the product names and descriptions in the hope to catch a chance to appear at the top of the customers' Google searches.
 
@@ -227,7 +228,7 @@ User stories and features were recorded and managed on [GitHub Projects](https:/
 | As a **site user**, I can **click on a navbar item for a specific category** so that I can **choose to view a smaller amount of related products**. | **MUST HAVE** |
 | As a **customer**, I can **choose an individual product** so that I can **view its description, price, colours, sizes available etc**. | **MUST HAVE** |
 | As a **site admin** I can **add a product to my inventory using a frontend from** so that I can **increase my range/amount of products available on site**. | **MUST HAVE** |
-| As a**site admin**, I can **edit existing inventory from a frontend form** so I can **change the quantity of stock, sizes, colours or edit products description, price or image**. | **MUST HAVE** |
+| As a **site admin**, I can **edit existing inventory from a frontend form** so I can **change the quantity of stock, sizes, colours or edit products description, price, image or mark as on-sale**. | **MUST HAVE** |
 | As a **site admin**, I can **delete product from the inventory using a frontend form** so that I can **remove it from sale**. | **MUST HAVE** |
 
 ### Epic - Basket Management & Purchasing
@@ -235,18 +236,12 @@ User stories and features were recorded and managed on [GitHub Projects](https:/
 | User Story | Priority |
 |------------------|---------------------|
 | As a **customer** I can **create and manage an account with LucaTaped** so that I can **keep my personal details, order history and speed up my checkout process**. | **MUST HAVE** |
-| As a **customer**, I can **click on 'Add to Bag' in my product view**so that I can **add the product to my bag**. | **MUST HAVE** |
+| As a **customer**, I can **click on 'Add to Bag' in my product view** so that I can **add the product to my bag**. | **MUST HAVE** |
 | As a **customer**, I can **increase/decrease/remove quantities of a product in my bag** so that I can **have control over what I wish to purchase**. | **MUST HAVE** |
 | As a **customer**, I can **view my bag total from any page** so that I can **keep track of my potential spending**. | **MUST HAVE** |
 | As a **customer**, I can **checkout my products securely** so that I can **complete my purchase**. | **MUST HAVE** |
-| As a **customer**, I can **receive an email after purchasing** so that I can **confirm my purchase and keep a record of my order**. | **MUST HAVE** |
+| As a **customer**, I can **receive an email after purchasing** so that I can **confirm my purchase and keep a record of my order**. | **SHOULD HAVE** |
 | As a **site user** I can **view error pages with 'Home' links** so that I can **return to the main page if a page is missing or forbidden**. | **MUST HAVE** |
-
-### Epic - Wishlist
-
-| User Story | Priority |
-|------------------|---------------------|
-| As a **logged-in user** I can **comment on the blog posts** so that I can **feel connected to the site and participate in the discourse**. | **COULD HAVE** |
 
 ### Epic - Newsletter
 
@@ -308,6 +303,8 @@ Form validation has been left with it's original styling as no change was needed
 - **Blog Posts**: Articles may be added by Admin with image and text fields within the Add/Edit post forms.
 - **Comments**: Comments may be added by registered users on blog posts.
 - **Product**: I used the Boutique Ado Product model as a template for the products and added the option for items to be on sale and for items to be customised. 
+- **Profile**: I used the Boutique Ado Profile model as a template and added the option for email, Eircode, favourite skatepark and interests. 
+
 
 <details open>
     <summary>Customised Product Model based on the boutique ado walkthrough - Allows for products to be marked as on-sale and/or customisable</summary>  

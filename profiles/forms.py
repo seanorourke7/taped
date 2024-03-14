@@ -16,7 +16,9 @@ class UserProfileForm(forms.ModelForm):
         placeholders = {
             'default_name': 'Name',
             'default_email': 'Email',
-            'default_phone_number': 'Phone Number',
+            'default_favourite_skate_park': 'Favourite Skate Park',
+            'default_interets':'Interests, Scooters, Skateboards etc.',
+            'default_phone_number':'Phone Number',
             'default_eircode': 'EirCode',
             'default_town_or_city': 'Town or City',
             'default_street_address1': 'Street Address 1',
