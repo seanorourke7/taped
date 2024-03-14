@@ -159,67 +159,48 @@ User Stories are documented in the lucataped [GitHub Projects Board](https://git
 | As a **customer**, I can **view the site's home page** so that I can **understand the site's intentions and purpose**. | Yes | Yes | Home page is visible | Pass | n/a |
 | As a **customer**, I can **see and use the navigation bar** so that I can **make my way around the site and get to where I would like**. | Yes | Yes | Navbar visible to all users in desktop/tablet and mobile views | Pass | n/a |
 | As a **customer**, I can **enter text into the search bar** so that I can **search for a specific item**. | Yes | Yes | Search bar accepts user input and returns search results when search form is submitted | Pass | n/a |
-| As a **customer** I can **create and manage an account with lucataped** so that I can **keep my personal details, order history and speed up my checkout process**. | Yes | Yes | Register form takes new user information, sends verification email link to confirm account. User may then sign in to view their account, edit their personal information and start saving their order histories from purchases made | Pass | n/a |
+| As a **customer** I can **create and manage an account with lucataped** so that I can **keep my personal details, order history and speed up my checkout process**. | Yes | Yes | Register form takes new user information. User may then sign in to view their account, edit their personal information and start saving their order histories from purchases made | Pass | n/a |
 | As a **customer**, I can **edit my personal details on my account** so that I can **keep them up to date**. | Yes | Yes | User information is editable | Pass | n/a |
 | As a **site user**, I can **enter my login details** so that I can **login in to my account**. | Yes | Yes | User may login with correct details | Pass | n/a |
 |  As a **site user**, I can **click on the visible links in the footer** so that I can **view the relevant information and destinations**. | Yes | Yes | Footer links return user to relevant area in website and external links open in a new tab | Pass | n/a |
-| As a **site user**, I can **register my email and receive a validation link via email** so that I can **create an account with lucataped to track my spending and purchases**. | Yes | Yes | Registration process works as expected to accept new users | Pass | n/a |
-| As a **customer**, I can **use the Contact Us form** so I can **send a message to the business/site admin**. | Yes | Yes | Contact form opens in a modal, accepts user input, submits form and returns thank you page for user, and email to lucataped Admin's inbox. | Pass | n/a |
+| As a **site user**, I can **register** so that I can **comment on blog posts**. | Yes | Yes | Registration process works as expected to accept new users | Pass | n/a |
 | As a **site user** I can **interact with sorting and view features on the 'All Products' page** so that I can **improve my shopping experience on the site**. | Yes | Yes | Price, category, A-Z, rating works as expected to display products in a certain order. | Pass | n/a |
 | As a **site user**, I can **click on a navbar item for a specific category** so that I can **choose to view a smaller amount of related products**. | Yes | Yes | Products sorted correctly into categories. | Pass | n/a |
 | As a **customer**, I can **choose an individual product** so that I can **view its description, price, colours, sizes available etc**. | Yes | Yes | Individual products returned when clicked on, all relevant information displayed and is interactable. | Pass | n/a |
 | As a **site admin** I can **add a product to my inventory using a frontend from** so that I can **increase my range/amount of products available on site**. | Yes | Yes | Add product form takes new information and displays it in the product template correctly. | Pass | n/a |
-| As a **site admin**, I can **edit existing inventory from a frontend form** so I can **change the quantity of stock, sizes, colours or edit products description, price or image**. | Yes | Yes | Edit product form takes user input and returns it correctly in the template. Product stock levels will be implemented in future features. | Pass | n/a |
-| As a **site admin**, I can **delete products from the inventory using a frontend form** so that I can **remove it from sale**. | Yes | Yes | Delete product modal appears when clicked on and delete confirmation is needed before product is removed from database. | Pass | n/a |
+| As a **site admin**, I can **edit existing inventory from a frontend form** so I can **edit products description, price or image and set sale price**. | Yes | Yes | Edit product form takes user input and returns it correctly in the template. | Pass | n/a |
+| As a **site admin**, I can **delete products from the inventory using a frontend form** so that I can **remove it from sale**. | Yes | Yes | 
 | As a **customer** I can **create and manage an account with lucataped** so that I can **keep my personal details, order history and speed up my checkout process**. | Yes | Yes | Account functions as expected, all user information is handled appropriately and displayed within the account template | Pass | n/a |
 | As a **customer**, I can **click on 'Add to Bag' in my product view**so that I can **add the product to my bag**. | Yes | Yes | Add to Bag works when clicked and product is added to bag and displayed in a success toast with the product displayed. A link to the bag is displayed in the toast message. | Pass | n/a |
 | As a **customer**, I can **increase/decrease/remove quantities of a product in my bag** so that I can **have control over what I wish to purchase**. | Yes | Yes | Increment/Decrement/Remove buttons work as expected when clicked by user. | Pass | n/a |
-| As a **customer**, I can **view my bag total from any page** so that I can **keep track of my potential spending**. | Yes | Yes | Bag item quantity is displayed in a small bubble top right of shopping bag icon in navbar. Bubble disappears if no items in customers bag. | Pass | n/a |
-| As a **customer**, I can **view my running total of carbon saved when I add products** so that I can **see how much carbon my purchases would had saved in their production vs non eco-friendly products of the same type**. | Yes | Yes | Customer can see their carbon total in #cc4818 orange font below their grand total. They are further informed of their carbon total in the checkout page | Pass | n/a |
-| As a **customer**, I can **view my total carbon footprint saving on checkout and it's associated climate impact/lifestyle changes** so that I can **understand the equivalent value of carbon saved versus purchasing the same non eco-friendly products**. | Yes | Yes | Carbon totals again displayed in green portion of checkout page to inform customer of their savings. | Pass | n/a |
+| As a **customer**, I can **view my bag total from any page** so that I can **keep track of my potential spending**. | Yes | Yes | Bag item quantity is displayed with a shopping bag icon top right in navbar. | Pass | n/a |
 | As a **customer**, I can **checkout my products securely** so that I can **complete my purchase**. | Yes | Yes | Payments handled correctly through Stripe's payment system, tested many times using the '4242424242...' Stripe testing card credentials. | Pass | n/a |
-| As a **customer**, I can **receive an email after purchasing** so that I can **confirm my purchase and keep a record of my order**. | Yes | Yes | Email is delivered to customer after making a purchase. |Pass | n/a |
+| As a **customer**, I can **receive an email after purchasing** so that I can **confirm my purchase and keep a record of my order**. | No | No | Email issue since google changed settings still working in this. |Fail | May need to change provider (hotmail etc.) |
 | As a **site user** I can **view error pages with 'Home' links** so that I can **return to the main page if a page is missing or forbidden**. | Yes | Yes | Error pages display correctly when user attempts to access non-existent content, restricted content. | Pass | n/a |
-|  As a **logged-in user** I can **click the 'Add to Wishlist' button** so that I can **keep a record of my favourite items**. | Yes | Yes | Add to wishlist button works for logged in user. | Pass | n/a |
-|  As a **logged-in user** I can **click the 'Remove' icon beside my Wishlist item** so that I can **remove that product from my Wishlist**. | Yes | Yes | Remove button eliminates product from user's wishlist | Pass | n/a |
-| As a **customer**, I can **enter my details into the newsletter form** so I can **receive emails about products or environmental issues/climate saving tips**. | Yes | Yes | Newsletter form submission brings user to new tab of MailChimp subscription confirmation. When checked, MailChimp subscription address book shows new user added. | Pass | n/a |
+| As a **customer**, I can **enter my details into the newsletter form** so I can **receive emails about products or new blog posts**. | Yes | Yes | Newsletter form submission brings user to new tab of MailChimp subscription confirmation. When checked, MailChimp subscription address book shows new user added. | Pass | n/a |
 
 
 ### Dev Tools/Real World Device Testing
 
-Responsiveness testing was carried out using Google Dev Tools on the devices detailed within the below table. Responsiveness was evident on all features throughout all tested devices.
-
-**Dev Tools Device Testing - all features tested, issues noted below**
-| Device  | Feature    | Issue  | Fix  |
-| ------- | ---------- | ------ |------|
-| iPhone 4 | Order History table | Content overflow on y-axis | Separate media query created for screens max-width: 350px to cope with iPhone4 320px screen width, font-size reduced for order history table |
-| iPhone12 Pro | All features | None | None  |
-| Samsung Galaxy S20 | All features | None | None  |
-| iPad Pro | All features | All features | None | None |
+Responsiveness testing was carried out using Google Dev Tools and on real world devices detailed within the below table. Responsiveness was evident on all features throughout all tested devices.
 
 **Real World Device Testing**
 | Device      | Feature    | Issue  | Fix  |
 | ------------| ---------- | ------ |------|
-| OPPO Reno 8 Lite |   All features    | No issues | None needed |
-| iPhone XR | All features |  No issues  | None needed |
-| iPhone 12  | All features | No issues | None needed |
-| Samsung Galaxy S21 | All features | No issues | None needed |
-| iPad Pro 2021 |    All features      |    No issues    |  None needed |
-| Acer Aspire 3 2019 laptop | All features | No issues | None needed |
+| iPhone 11 | entire site | none |n/a |
+| Samsung s22 | entire site | none |n/a |
+| OPPO | entire site | none |n/a |
+| Samsung 10 Tab | entire site | none |n/a |
 
 
 ## Bugs
 
-| No. | Bug | Solved | Fix | Solution Credit | Commit no. |
+| No. | Bug | Solved | Fix | Solution Credit |
 | --- | ---------------- | ---- | ------------- | -------------- | ------------|
-| 1   | JavaScript dropdown menu fix | Yes | moving the mouseleave function outside of the main code seems to fix the 'dropdown menu randomly not appearing on hover' issue, This did not fix it, 2nd fix was to update to Bootstrap 4.6 and add 'ease' to menu hover transitions. Currently working consistently, 'pb-2' added to'all' fully fixed it | Investigating the CSS myself | e27b7a5/2aab065 |
-| 2   | UnboundLocalError:Local variable 'categories' referenced before assignment & navbar active item styling. 'All' products option not displaying due to category = None when it was necessary for it to be categories. | Yes | Changed to categories = [] to initialize as empty list and added 'not request.GET.category' to 'all' nav-item li tag to remove bold styling when other product categories selected. | Stackoverflow <https://tinyurl.com/26a5ksrd> & CareerKarma <https://tinyurl.com/yc847kb7> | 76e8ef8 |
-| 3   | Checkout form info not saving to Profile/Account form on checkout success. The 'save_info' section of checkout_success did not save the changed user info to the user's profile. | Yes | I considered that I may have caused an issue with my Wishlist app signals/contexts but after debugging there was no issue. Debugging with print statements to the terminal showed that the checkout form data was not being saved. I tried several fixes. First was to clear the site data via Dev Tools->Application->Clear Site Data and restart the server. No positive fix. I then backtracked to some earlier commits and removed the 'full_name' field that I had added to my UserProfile models and changed the '_' in checkout.html name='save_info' to name='save-info'. Tested my code with superuser and created a new user to find the issue resolved and no issue with Wishlist app. | Fix credit -> Gemma from Tutor Support for helping me to confirm my debugging process was correct and the 'Clear SiteData' tip, and a strong coffee for the second pass at spotting and fixing the bug. | 7659ada |
-| 4  | Email Confirmation for order displaying multiple zeros at the end of the totals. | Yes | Fixed with 'floatformat:2' in confirmation_email.txt | Fixed by developer | 5774e14 |
-| 5  | Bag 'Remove' removes all items with same id but different sizes, if I wanted to remove a medium black tshirt and leave the small black tshirt, code was removing both black tshirts. | Yes | Fixed in quantity_update_script, removed `'size':size` and replaced with `'product_size`:size as per the product models. | Fixed by developer | 3115569 |
-| 6 | Sizes not showing in Checkout Success/Order History | Yes | Fixed by changing products.size to products_size | Fixed by developer, typo | b5f04cb |
-
+| 1   | Emails not sending | No | Still working on a solution may be due to google settings change. May need to change provider | Still working on it. |
+| 2   | Slug not auto generting on new blog posts. | Yes | Couldn't get the slugify to auto generate a slug so I have left the slugfield open to the admin so they can set a unique slufg when generating the post as a temporary fix. There are instructions for the admin as a placeholder | Myself, stil working on a permanent solution | 
+| 3  | Country drop down option from django not working with stripe form | Yes | I changed the model to have the counties of Ireland as a dropdown and to use eircode instead of postcode but this had an impact on using the django countries dropdown code. As a solution I didn't use the django countries and instead set the placeholder of country to IE. The store is designed to only deliver to ireland at the moment hence the eircode and county dropdown menus. | Fixed by me |
 
 ### Unresolved/Known Bugs
 
-There are no known bugs in lucataped.
+There are no known bugs that impact the user experrience in lucataped.
