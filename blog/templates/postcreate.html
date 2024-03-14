@@ -27,7 +27,7 @@
         </div>
         <div class="row">
             <div class="col-12 col-lg-6" >
-              <form enctype="multipart/form-data" class="mt-6" action="{% url 'postcreate' %}" method="POST" >
+              <form label="Form to create a new blog post" enctype="multipart/form-data" class="mt-6" action="{% url 'postcreate' %}" method="POST" >
                 {% csrf_token %}
                 {{ form|crispy }}
                 <button class="btn btn-black rounded-0 text-uppercase float-left">Create Post</button>
