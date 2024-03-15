@@ -551,8 +551,10 @@ A copy of the original repository can be made through GitHub. Please follow the 
 The majority of the code in this project came from the [Code Institute's](https://codeinstitute.net/ie/) Learning Content. 
 Particularly Project 4 and 5 walkthroughs.
 
-Portfolio Project 5 - Boutique Ado provided a foundation which I took apart and altered to fit my project's design
+Portfolio Project 5 - Boutique Ado provided a foundation which I altered to fit my project's design
 Postfolio Project 4 "I think therefore I blog" was used heavily for the blog section
+
+The structure of the ReadMe and Testing File was thanks to support from my course facilitator. 
 
 ## Media
 
