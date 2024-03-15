@@ -7,6 +7,7 @@ from django.conf import settings
 from products.models import Product
 from profiles.models import UserProfile
 
+# offers irish counties as a drop down list.
 
 choices = [
     ('Kildare', 'Kildare'),

@@ -34,6 +34,10 @@
             </form>
             </div>
         </div>
+        {% else %}
+        <div>You are not authorised to do that please login or contact us for more details.
+            <a href="{% url 'home' %}" class="dropdown-item">Go Back</a>
+        </div>
     </div>
            
             {% endif %} 

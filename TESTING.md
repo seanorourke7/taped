@@ -197,7 +197,7 @@ Responsiveness testing was carried out using Google Dev Tools and on real world 
 
 | No. | Bug | Solved | Fix | Solution Credit |
 | --- | --- | ------ | --- | --------------- |
-| 1   | Emails not sending | No | Still working on a solution may be due to google settings change. May need to change provider. I currently have the email verification set to "none". | Still working on it. |
+| 1   | Emails not sending | No | Still working on a solution. May be due to google settings change. May need to change provider. I currently have the email verification set to "none". | Still working on it. |
 | 2   | Slug not auto generting on new blog posts. | Yes | Couldn't get the slugify to auto generate a slug so I have left the slugfield open to the admin so they can set a unique sluf when generating the post as a temporary fix. There are instructions for the admin as a placeholder and the input field has been renamed URL | Myself, still working on a permanent solution | 
 | 3  | Country drop down option from django not working with stripe form | Yes | I changed the model to have the counties of Ireland as a dropdown and to use eircode instead of postcode but this had an impact on using the django countries dropdown code. As a solution I didn't use the django countries and instead set the placeholder of country to IE. The store is designed to only deliver to ireland at the moment hence the eircode and county dropdown menus. | Fixed by me |
 

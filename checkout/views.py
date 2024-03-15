@@ -16,6 +16,9 @@ import stripe
 import json
 
 
+# Views to handle checkout with stripe 
+
+
 def cache_checkout_data(request):
     try:
         pid = request.POST.get('client_secret').split('_secret')[0]
@@ -79,7 +82,7 @@ def checkout(request):
                             order_line_item.save()
                 except Product.DoesNotExist:
                     messages.error(request, (
-                        "One of the products in your bag wasn't found in our database. "                        "Please call us for assistance!")
+                        "One of the products in your bag wasn't found in our database." "Please call us for assistance!")
                     )
                     order.delete()
                     return redirect(reverse('view_bag'))
