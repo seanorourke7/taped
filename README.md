@@ -117,11 +117,11 @@ A simple logo again of red and black lettering, is used as a header. It's simple
 
 Product images are kept clean with no backgrounds so that focus is on the product itself. Feedback is continuously provided to the user via the website's header which displays how much their shopping total is currently. Message 'toasts' are also visible upon user actions to display further information. Buttons are kept similar for continuity.
 
-![Header Feedback](static/media/headerfeedback1.png)  
-*Header feedback is kept clean and intuitive*
 When the user hovers over any of the menus in the header the color changes from black to red in keeping with the style of the site. 
 When the visitor has items in their bag the current total of their shopping bag is displayed under the bag icon, whether logged in or not.
 When a user is logged in their UserName appears under the person icon instead of "My Account".
+
+![Header Feedback](static/media/headerfeedback1.png) 
 
 <details open>
     <summary>Header & Navigation Menu Demo</summary>  
