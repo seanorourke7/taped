@@ -95,7 +95,10 @@ Customers are provided with an interesting site that has an intuitive shopping e
 LucaTaped seeks to build a strong base of regular shoppers who seek quality products relevant to their interests. The newsletter and blog posts are designed to showcase the constant improvement Luca in making in his skills and to showcase new products available for sale. Further marketing is made through the businesses social media channels, in particular the Facebook, Instagram, and Tiktok page.
 Purchases can be encouraged with the "on-sale" option in the products fields which displays the sale price in red and the original price with a line through.  
 
-The idea is to bring Luca more engagement from his fans and build a community that will purchase form the brand and build brand loyalty through regular blog posts and social media updates which will all funnel potential customers to the store by linking to the site at every opportunity. 
+The idea is to bring Luca more engagement from his fans and build a community that will purchase from the brand and build brand loyalty through regular blog posts and social media updates which will all funnel potential customers to the store by linking to the site at every opportunity. 
+
+There is an option to order custom products and there is a field in the product model to accomodate this with an option to email the store for more information. 
+This will help the store to stand out from the rest and make the customer feel more connected to the brand. 
 
 There are sponsorship opportunities as each post has a "Location" and "Equiptment Used" model field for highlighting skateparks and equiptment that may have been sponsered. 
 
@@ -194,7 +197,8 @@ Sprints were broken down into appropriately sized chunks.
 
 ## Marketing
 
-A [LucaTaped Facebook Page](https://www.facebook.com/people/LucaTaped/61557013865668/) was created to demonstrate promotion of the LucaTaped store on social media. Posts informing customers of deals and new products would be made on the page with the hopes of drawing in more revenue. Facebook provides an easy, minimal-step process to allow business owners to promote their business, with additional paid 'boost' features to further promote and spread the reach of the posts. LucaTaped also offers a newsletter subscription service through MailChimp. 
+A [LucaTaped Facebook Page](https://www.facebook.com/people/LucaTaped/61557013865668/) was created to demonstrate promotion of the LucaTaped store on social media. Posts informing customers of deals and new products would be made on the page with the hopes of drawing in more revenue. Facebook provides an easy, minimal-step process to allow business owners to promote their business, with additional paid 'boost' features to further promote and spread the reach of the posts. (The page has since been shutdown by facebook due to lack of activity). 
+LucaTaped also offers a newsletter subscription service through MailChimp. 
 
 Within the head's meta tags of the base template are researched keywords and a description of LucaTaped's goal as a business. These keywords have been researched to ensure that both short-tail and long-tail keywords are included. Keywords such as 'scooter', 'stunts' and 'skatepark' aim to reach most of the market, with additional descriptive key phrases such as 'buy scooter accessories' and 'buy grip tape' to draw in users who know exactly what type of product they are looking for. Important keywords like 'Grip Tape' and 'Scooter' are present in the product names and descriptions in the hope to catch a chance to appear at the top of the customers' Google searches.
 
@@ -233,7 +237,7 @@ User stories and features were recorded and managed on [GitHub Projects](https:/
 | As a **site user**, I can **click on a navbar item for a specific category** so that I can **choose to view a smaller amount of related products**. | **MUST HAVE** |
 | As a **customer**, I can **choose an individual product** so that I can **view its description, price, colours, sizes available etc**. | **MUST HAVE** |
 | As a **site admin** I can **add a product to my inventory using a frontend from** so that I can **increase my range/amount of products available on site**. | **MUST HAVE** |
-| As a **site admin**, I can **edit existing inventory from a frontend form** so I can **change the quantity of stock, sizes, colours or edit products description, price, image or mark as on-sale**. | **MUST HAVE** |
+| As a **site admin**, I can **edit existing inventory from a frontend form** so I can **change the sizes, colours or edit products description, price, image or mark as on-sale**. | **MUST HAVE** |
 | As a **site admin**, I can **delete product from the inventory using a frontend form** so that I can **remove it from sale**. | **MUST HAVE** |
 
 ### Epic - Basket Management & Purchasing
