@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Luca Taped is website designed to showcase the skillset and development of the owner (Luca) and offer a shopping experience for like-minded people who are looking to customise and enhance their own scooters.  
+Luca Taped is a website designed to capitalize on the reach and popularity of the owner (Luca). To showcase his development as a stunt scooter rider and use that influence to bring potential customers onto the platform and offer a shopping experience for people who are looking to customise and enhance their own scooters.  
 
 View live site: [LucaTaped](https://taped-8201a532e6b6.herokuapp.com/)
 
@@ -92,13 +92,16 @@ Customers are provided with an interesting site that has an intuitive shopping e
 
 ## Business Goals
 
-LucaTaped seeks to build a strong base of regular shoppers who seek quality products relevant to their interests. The newsletter and blog posts are designed to showcase the constant inprovement Luca in making in his skills and to showcase new products available for sale. Further marketing is made through the businesses social media channels, in particular the Facebook, Instagram, and Tiktok page.
+LucaTaped seeks to build a strong base of regular shoppers who seek quality products relevant to their interests. The newsletter and blog posts are designed to showcase the constant improvement Luca in making in his skills and to showcase new products available for sale. Further marketing is made through the businesses social media channels, in particular the Facebook, Instagram, and Tiktok page.
+Purchases can be encouraged with the "on-sale" option in the products fields which displays the sale price in red and the original price with a line through.  
 
 The idea is to bring Luca more engagement from his fans and build a community that will purchase form the brand and build brand loyalty through regular blog posts and social media updates which will all funnel potential customers to the store by linking to the site at every opportunity. 
 
 There are sponsorship opportunities as each post has a "Location" and "Equiptment Used" model field for highlighting skateparks and equiptment that may have been sponsered. 
 
 Once on the site the customer will have similar content to that on the socials so will be more likely to stay on the site longer. This will encourage interaction and ultimatley lead to customers making a purchase.  
+
+The site is designed to be available to Irish customers only initialy and the profile and checkout forms reflect this with a dropdown menu for county that only includes the counties of Ireland and the default County is set to IE.   
 
 LucaTaped provides easy Admin functionality for the business owner with an accessible, easy-use Admin access to manage inventory. The additional frontend forms allows the business owner to make quick and easy changes, Add/Edit/Delete Products, mark Products as on sale and publish new articles to the blog. 
 
@@ -117,6 +120,8 @@ Product images are kept clean with no backgrounds so that focus is on the produc
 ![Header Feedback](static/media/headerfeedback.png)  
 *Header feedback is kept clean and intuitive*
 When the user hovers over any of the menus in the header the color changes from black to red in keeping with the style of the site. 
+When the visitor has items in their bag the current total of their shopping bag is displayed under the bag icon, whether logged in or not.
+When a user is logged in their UserName appears under the person icon instead of "My Account".
 
 <details open>
     <summary>Header & Navigation Menu Demo</summary>  
