@@ -16,6 +16,7 @@ def bag_contents(request):
     for item_id, item_data in bag.items():
         if isinstance(item_data, int):
             product = get_object_or_404(Product, pk=item_id)
+            # checks if the item is on sale
             if product.on_sale:
                 sale_total += item_data * product.sale_price
                 product_count += item_data
@@ -35,6 +36,7 @@ def bag_contents(request):
         else:
             product = get_object_or_404(Product, pk=item_id)
             for size, quantity in item_data['items_by_size'].items():
+                # checks if the item has sizes and if it's on sale
                 if product.on_sale:
                     sale_total += quantity * product.sale_price
                     product_count += quantity
@@ -53,6 +55,7 @@ def bag_contents(request):
                         'product': product,
                         'size': size,
                     })
+        # calculates total of items to include sale prices 
         total = sale_total + off_sale_total        
 
     if total < settings.FREE_DELIVERY_THRESHOLD:
