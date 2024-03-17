@@ -241,6 +241,7 @@ User stories and features were recorded and managed on [GitHub Projects](https:/
 | User Story | Priority |
 |------------------|---------------------|
 | As a **customer** I can **create and manage an account with LucaTaped** so that I can **keep my personal details, order history and speed up my checkout process**. | **MUST HAVE** |
+| As a **site user** I can **know im logged in by seeing my username displayed at the top of the page** so that I can **know that my delivery and profile info will be available to me when checking out**. | **MUST HAVE** |
 | As a **customer**, I can **click on 'Add to Bag' in my product view** so that I can **add the product to my bag**. | **MUST HAVE** |
 | As a **customer**, I can **increase/decrease/remove quantities of a product in my bag** so that I can **have control over what I wish to purchase**. | **MUST HAVE** |
 | As a **customer**, I can **view my bag total from any page** so that I can **keep track of my potential spending**. | **MUST HAVE** |
