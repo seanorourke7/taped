@@ -408,10 +408,10 @@ a {
     text-decoration: line-through;
 }
 
-#sale_price {
+.sale_price {
     color: red;
 }
-
+/* header changes*/
 .red-logo {
     color:red
 }
@@ -419,7 +419,7 @@ a {
 .dropdown-item:hover{
     color:red
 }
-
+/* footer changes*/
 .footer-form {
     font-size: 1rem;
 }
