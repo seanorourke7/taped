@@ -2,7 +2,7 @@ from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from django.http import HttpResponseRedirect
 from .models import Post
-from .forms import CommentForm
+from .forms import CommentForm, PostForm
 from . import forms
 from django.contrib import messages
 from django.views.generic import UpdateView
@@ -109,6 +109,10 @@ class PostCreate(View):
 
 # view for deleting posts by the user
 
+
+class Delete(View):
+    def delete(self, request, slug):
+        template_name = "delete_post.html"
 
 class DeletePost(View):
     def get(self, request, slug):

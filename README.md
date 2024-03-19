@@ -576,3 +576,7 @@ The structure of the ReadMe and Testing File was thanks to support from my cours
 - A huge thanks to my wife for her continued support during this project and Diploma. 
 - Much gratitude is extended to my mentor Graeme Taylor  for his expert guidance and advice during this Diploma.
 - Thank you to my fellow students and facilitators.
+
+
+- Although Luca is a real person this website is for educational purposes and serves as a prototype only.
+
