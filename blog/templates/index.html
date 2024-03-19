@@ -12,10 +12,10 @@
               <div class="image-container">
                 {% if "placeholder" in post.featured_image.url %}
                 <!-- A featured image will be used if an image isnt uploaded -->
-                <img
+                <a href="{% url 'post_detail' post.slug %}"><img
                   class="card-img-top"
                   src="https://res.cloudinary.com/dwej6pult/image/upload/v1709831622/pexels-brett-sayles-2861097_jmf6yq.jpg"
-                  alt="default image of scooter">
+                  alt="default image of scooter"></a>
                 {% else %}
                 <a href="{% url 'post_detail' post.slug %}"><img
                   class="card-img-top"

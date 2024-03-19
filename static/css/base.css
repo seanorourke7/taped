@@ -423,6 +423,7 @@ a {
 .dropdown-item:hover{
     color:red
 }
+
 /* footer changes*/
 .footer-form {
     font-size: 1rem;
@@ -433,7 +434,6 @@ a {
     .container, h-100 {
         padding-top: 80px;
     }
-
     .shop-now-button {
         min-width: 240px;
     }
@@ -444,18 +444,21 @@ a {
         font-size:medium;
         margin-top: 100px;
     }
-
     .product_image {
         padding-top: 50px;
     }
-
     .blog_image {
         width: 100%
 
     }
-
     .custom-select-sm {
         margin-top: 20px;
+    }
+    iframe {
+        width: 180px;
+    }
+    .mobile_nav {
+        padding: 0;
     }
 
 }
