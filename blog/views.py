@@ -8,10 +8,9 @@ from django.contrib import messages
 from django.views.generic import UpdateView
 from django.urls import reverse_lazy
 
-# views for the home page
-
 
 class PostList(generic.ListView):
+    # views for the blog overview page
     model = Post
     queryset = Post.objects.filter(status=1).order_by('-created_on')
     template_name = 'index.html'
@@ -19,7 +18,7 @@ class PostList(generic.ListView):
 
 
 class PostDetail(View):
-
+    # view to show the blogpost details
     def get(self, request, slug, *args, **kwargs):
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
@@ -72,11 +71,9 @@ class PostDetail(View):
             },
         )
 
-# views for liking posts
-
 
 class PostLike(View):
-
+    # views for liking posts
     def post(self, request, slug, *args, **kwargs):
         post = get_object_or_404(Post, slug=slug)
         if post.likes.filter(id=request.user.id).exists():
@@ -86,10 +83,9 @@ class PostLike(View):
 
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
-# view for creating a new post by the user
-
 
 class PostCreate(View):
+    # view for creating a new post by the admin/superuser
     def get(self, request):
         form = forms.PostForm()
         return render(request, "postcreate.html", {'form': form})
@@ -107,10 +103,9 @@ class PostCreate(View):
             return HttpResponseRedirect(reverse('home'))
         return render(request, 'postcreate.html', {'form': form})
 
-# view for deleting posts by the user
-
 
 class Delete(View):
+    # view for deleting posts by the admin/superuser
     def delete(self, request, slug):
         template_name = "delete_post.html"
 
@@ -122,10 +117,9 @@ class DeletePost(View):
         messages.info(request, f'Post has been Deleted')
         return HttpResponseRedirect(reverse('home'))
 
-# view for editing posts by the user
-
 
 class EditPost(UpdateView):
+    # view for editing posts by the admin/superuser
     model = Post
     template_name = 'edit_post.html'
     fields = ['title', 'content', 'location', 'equiptment_featured', 'featured_image', 'status']

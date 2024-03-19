@@ -47,16 +47,19 @@
                         </a>
                     </p>
                     {% endif %}
+                    <!-- shows product rating -->
                     {% if product.rating %}
                         <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 10</small>
                     {% else %}
                         <small class="text-muted">No Rating</small>
                     {% endif %}
+                    <!-- shows if item is customiseable -->
                     {% if product.customiseable %}
                     <p class="mt-3"><strong>This item is customiseable. <a href="mailto:lucataped@gmail.com">Email us for more info !</a></strong></p>
                     {% else %}
                     <small class="text-muted"></small>
                     {% endif %}
+                    <!-- only allows superuser/admin to edit or delete -->
                     {% if request.user.is_superuser %}
                         <small class="ml-3">
                             <a href="{% url 'edit_product' product.id %}">Edit</a> |                 

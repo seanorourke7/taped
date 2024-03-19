@@ -18,6 +18,7 @@
     <div class="overlay"></div>
     <div class="container">
         <div class="row">
+        <!-- Only allows admin/superuser to create a post -->
           {% if user.is_superuser %}
             <div class="col">
                 <hr>
@@ -35,6 +36,7 @@
             </div>
         </div>
         {% else %}
+        <!-- Message for non admin/superuser -->
         <div>You are not authorised to do that please login or contact us for more details.
             <a href="{% url 'home' %}" class="dropdown-item">Go Back</a>
         </div>

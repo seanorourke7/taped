@@ -20,7 +20,7 @@
                 <hr>
             </div>
         </div>
-
+        <!-- Code for showing contents of shopping bag -->
         <div class="row">
             <div class="col">
                 {% if bag_items %}
@@ -96,6 +96,7 @@
                                         {% include "bag/quantity-form.html" %}
                                     </td>
                                     <td class="py-3">
+                                        <!-- code to check if an item is on-sale -->
                                         {% if item.product.on_sale %}
                                         <p class="my-0">€{{ item.product.sale_price | calc_subtotal:item.quantity }}</p>
                                         {% else %}
@@ -104,6 +105,7 @@
                                     </td>
                                     <td class="py-3">
                                         {% if item.custom %}
+                                        <!-- code to check if an item is customiseable -->
                                         <p>This item can be customised. DM us for more info @ https://www.instagram.com/luca_tapedoffical/</p>
                                         {% endif %}
                                     </td>

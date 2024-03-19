@@ -16,10 +16,10 @@ import stripe
 import json
 
 
-# Views to handle checkout with stripe 
-
-
 def cache_checkout_data(request):
+    """
+    Views to handle checkout with stripe 
+    """    
     try:
         pid = request.POST.get('client_secret').split('_secret')[0]
         stripe.api_key = settings.STRIPE_SECRET_KEY

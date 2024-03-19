@@ -34,7 +34,6 @@
         <p> Equiptment Featured: {{ post.equiptment_featured | safe }}</p>
         
        <!-- Code to handle likes -->
-
         <div>
           <div >
               {% if user.is_authenticated %}
@@ -80,9 +79,7 @@
       </div>
     </div>
   </div>
-
 <!-- Code will only allow edit and delte option if the user is a superuser/admin -->
-
   <div>
     {% if user.is_superuser %}
     <span>

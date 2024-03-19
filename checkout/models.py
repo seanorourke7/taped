@@ -41,6 +41,9 @@ choices = [
 
 
 class Order(models.Model):
+    """
+    model for delivery and order details
+    """
     order_number = models.CharField(max_length=32, null=False, editable=False)
     user_profile = models.ForeignKey(
             UserProfile, on_delete=models.SET_NULL,
