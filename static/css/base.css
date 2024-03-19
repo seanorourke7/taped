@@ -96,6 +96,10 @@ a.category-badge > span.badge:hover {
     cursor:pointer;
 }
 
+.product_image {
+    width: 100%;
+}
+
 input[name='q']::placeholder {
     color: #aab7c4;
 }
@@ -422,4 +426,32 @@ a {
 /* footer changes*/
 .footer-form {
     font-size: 1rem;
+}
+
+/* resize for galaxy fold on chrome dev tools */
+@media (max-width: 300px){
+    .container, h-100 {
+        padding-top: 80px;
+    }
+
+    .shop-now-button {
+        min-width: 240px;
+    }
+    .socials {
+        font-size: x-small;
+    }
+    .footer-form {
+        font-size:medium;
+        margin-top: 100px;
+    }
+
+    .product_image {
+        padding-top: 50px;
+    }
+
+    .blog_image {
+        width: 100%
+
+    }
+
 }

@@ -14,14 +14,14 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
-                <div class="image-container my-5">
+                <div class="product_image image-container my-5">
                     {% if product.image %}
                         <a href="{{ product.image.url }}" target="_blank">
                             <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
                         </a>
                         {% else %}
                         <!--default image if none available-->
-                        <img class="blog_image"
+                        <img class="product_image"
                             src="https://res.cloudinary.com/dwej6pult/image/upload/v1710531828/LOGOimage_bcuyuc.png"
                             alt="company logo" />
                     {% endif %}
