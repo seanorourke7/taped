@@ -106,7 +106,7 @@ Once on the site the customer will have similar content to that on the socials s
 
 The site is designed to be available to Irish customers only initialy and the profile and checkout forms reflect this with a dropdown menu for county that only includes the counties of Ireland and the default Country is set to IE.   
 
-LucaTaped provides easy Admin functionality for the business owner with an accessible, easy-use Admin access to manage inventory. The additional frontend forms allows the business owner to make quick and easy changes, Add/Edit/Delete Products, mark Products as on sale and publish new articles to the blog. 
+LucaTaped provides easy Admin functionality for the business owner with an accessible, easy to use product management section to manage inventory. The additional frontend forms allows the business owner to make quick and easy changes, Add/Edit/Delete Products, mark Products as on sale and publish new articles to the blog. 
 
 # UX/UI - User Experience/User Interface
 
@@ -115,6 +115,7 @@ LucaTaped provides easy Admin functionality for the business owner with an acces
 The website is kept clean, with good flow and simple color contrasts. The logo is red and black and I have used that theme throughout the site to keep it uniform and accessible. I have made the white text areas slightly transparant to reduce the sharpness of the white and give a more pleasing appearance to the user. 
 
 A simple logo again of red and black lettering, is used as a header. It's simple and effective design is eye catching and easily recogniseable. 
+This logo is used as the default image field for products that don't have an image uploaded.  
 
 ![lucatpaed logo](static/media/LOGO.png)  
 
@@ -153,7 +154,7 @@ The Font is Russo One from google fonts. This is chosen as it is a strong font t
 
 The primary objective was to create an e-commerce store that satisfied the assessment criteria of the Code Institute's Project 5: E-Commerce Module. The store must provide the expected functions of a responsive e-commerce store using Stripe as a payment system, user/guest views for authentication and store features, some extra features of my choosing, such as a blog, and demonstration of some marketing/SEO skills. The User, whether paying customer or just browsing, must receive the best in UX and feel that LucaTaped is relatable and trust-worthy. 
 
-The site's design is based around Luca's realworld Instagram content. Images were edited for the website to be cohesive. Bootstrap and Crispy Forms were used for the project's frontend to speed up the process and to keep the templates consistent. Further customisation to the buttons, forms, modals, toasts and user feedback processes were added to the project's CSS files. 
+The site's design is based around Luca's realworld Instagram content. Images were edited for the website to be cohesive. Bootstrap and Crispy Forms were used for the project's frontend to speed up the process and to keep the templates consistent. Further customisation to the buttons, forms, modals, toasts and user feedback processes were added to the project. 
 
 If a customer chooses to make a purchase then they are given consistent feedback through the use of 'toasts' messages. The purchasing process is presented using Stripe payment handlers, obtained and setup using [Stripe's](https://stripe.com/docs) documentation and website.
 
@@ -261,11 +262,11 @@ User stories and features were recorded and managed on [GitHub Projects](https:/
 
 ## Scope Plane
 
-A working e-commerce store was essential so I initially planned to keep to the MVP to ensure that I would complete the project successfully. Especially with the project being my final one for this Diploma. 
+A working e-commerce store was essential so I initially planned to keep to the MVP to ensure that I would complete the project successfully in the time allowed. 
 
-Adding a blog feature posted solely by the Admin of the website felt important to give more information to the customers and to showcase my ability as a developer. 
+Adding a blog feature posted solely by the Admin of the website was important to give more information to the customers and to showcase my ability as a developer. 
 
-Django's MVT framework allowed these features to be built quickly and the addition of an Admin frontend panel for managing products and articles created a robust e-commerce site that could start taking orders tomorrow.
+Django's MVT framework allowed these features to be built quickly and the addition of Admin frontend access for managing products and articles created a robust e-commerce site that could start taking orders tomorrow.
 
 Essential features were:
 - User Accounts with AllAuth
@@ -368,13 +369,7 @@ Customers have full CRUD functionality with their prospective purchases. They ma
 
 **Checkout**
 
-The checkout process for LucaTaped is operated through the [Stripe](https://stripe.com/docs) API. As stated above -> If you wish to make a test purchase, you can use the following [Stripe Dummy Card](https://stripe.com/docs/testing) details:
-
-- Success Card Number: 4242424242424242
-- 3D Secure Auth Number: 4000 0027 6000 3184
-- Exp Date: Any date in the future using the format MM/YY
-- CVN: any 3 digit number
-- Postcode: any 5 numerals  
+The checkout process for LucaTaped is operated through the [Stripe](https://stripe.com/docs) API. 
 
 Any payments made using a valid debit/credit card will not process and the card will not be charged. No orders made will be fulfilled.
 
@@ -409,7 +404,7 @@ Their totals and items purchased are also visible in the checkout success page u
 
 **Admin Dashboard - Logged in Admin/Superuser only**
 
-When developing this project it was important to me to have a separate Admin area accessible via the frontend, in addition to the Django Backend Panel. I fulfilled this by separating out the CRUD features for the Admin/Superuser into "Product Management" and "Create a Post". This provides a direct link to editable forms for adding/editing products and articles. A separated 'Admin' view (viewable only to the Admin when they are logged in) has been created for Blog Posts and Products with lists that display 'Edit' and 'Delete' Buttons. The 'Create a Post' button brings the Admin directly to adding a new blog post. The 'Product Management' button brings the Admin directly to adding a new product. Crispy Forms and Summernote render forms that allow for a high degree of editing, manipulation and connection to the database models.
+When developing this project it was important to me to have separate Admin access via the frontend, in addition to the Django Backend Panel. I fulfilled this by separating out the CRUD features for the Admin/Superuser into "Product Management" and "Create a Post". This provides a direct link to editable forms for adding/editing products and articles. A separated 'Admin' view (viewable only to the Admin when they are logged in) has been created for Blog Posts and Products with lists that display 'Edit' and 'Delete' Buttons. The 'Create a Post' button brings the Admin directly to adding a new blog post. The 'Product Management' button brings the Admin directly to adding a new product. Crispy Forms and Summernote render forms that allow for a high degree of editing, manipulation and connection to the database models.
 
 <details open>
     <summary>Admin Dashboard View - Admin Only</summary>  
@@ -562,9 +557,9 @@ The majority of the code in this project came from the [Code Institute's](https:
 Particularly Project 4 and 5 walkthroughs.
 
 Portfolio Project 5 - Boutique Ado provided a foundation which I altered to fit my project's design
-Postfolio Project 4 "I think therefore I blog" was used heavily for the blog section
+Postfolio Project 4 "I think therefore I blog" was referanced for the blog section
 
-The structure of the ReadMe and Testing File was thanks to support from my course facilitator. 
+My course facilitator Amy Richardson helped with the structure of the ReadMe and Testing File. 
 
 ## Media
 
@@ -574,9 +569,8 @@ The structure of the ReadMe and Testing File was thanks to support from my cours
 ## Acknowledgements
 
 - A huge thanks to my wife for her continued support during this project and Diploma. 
-- Much gratitude is extended to my mentor Graeme Taylor  for his expert guidance and advice during this Diploma.
+- Much gratitude is extended to my mentor Graeme Taylor for his expert guidance and advice during this Diploma.
 - Thank you to my fellow students and facilitators.
-
 
 - Although Luca is a real person this website is for educational purposes and serves as a prototype only.
 
