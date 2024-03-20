@@ -104,7 +104,7 @@ There are sponsorship opportunities as each post has a "Location" and "Equiptmen
 
 Once on the site the customer will have similar content to that on the socials so will be more likely to stay on the site longer. This will encourage interaction and ultimatley lead to customers making a purchase.  
 
-The site is designed to be available to Irish customers only initialy and the profile and checkout forms reflect this with a dropdown menu for county that only includes the counties of Ireland and the default County is set to IE.   
+The site is designed to be available to Irish customers only initialy and the profile and checkout forms reflect this with a dropdown menu for county that only includes the counties of Ireland and the default Country is set to IE.   
 
 LucaTaped provides easy Admin functionality for the business owner with an accessible, easy-use Admin access to manage inventory. The additional frontend forms allows the business owner to make quick and easy changes, Add/Edit/Delete Products, mark Products as on sale and publish new articles to the blog. 
 
